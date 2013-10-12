@@ -1,0 +1,32 @@
+<h6><%=h content_for(:title, "Blog Articles") %></h6>
+<div class="row">
+	<div class="large-12 columns">
+		<div class="glava">
+			<h3>The Blog</h3>
+			<p> talk talk, talk <span>:-)</span> Read about new updates.</p>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="large-9 columns">
+		<div class="blogs">
+	<% for blog in @blogs %>
+		<ul class="side-nav clanki">		
+			<li class="naslov"><%= link_to blog.naslov, blog %></li>
+			<li class="ustvarjen">Written on <%= blog.created_at.strftime('%b %d, %Y') %></li>
+			<li class="opis"><%= truncate(strip_tags(blog.opis),length: 100) %></li>
+			<li class="divider"></li>
+		</ul>
+	<% end %>	
+			
+		</div>
+	</div>
+
+
+	<div class="large-3 columns">
+		<div class="panel">
+			<p>sdf</p>	
+		</div>
+	</div>
+</div>

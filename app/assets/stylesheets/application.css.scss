@@ -1,0 +1,78 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require foundation_and_overrides
+ *= require_tree .
+
+ */
+.menu {
+	
+	width:200px;
+	font-size:18px;
+	letter-spacing:2px;
+	color: #132781;
+		li {
+			text-align:right;
+			color: #000013;
+			font-family: family;
+
+
+				& :hover {
+					color:#313131;
+				}
+		}
+}	
+
+.all_quotes {
+	display:none;
+}
+.quotes {
+	width:200px;
+	h6 {
+		font-size:20px;
+		font-family: 'Indie Flower', cursive;
+		text-align:center;
+		border-bottom:3px dotted #F2F2F2;
+	}
+	h5 {
+		font-size:13px;
+		font-family: 'Cantora One', sans-serif;
+
+	}
+	h4 {
+		font-size:11px;
+		text-align:right;
+		font-family: family;
+	}
+}
+
+
+.footer-nav {
+	font-size:12px;
+	text-align:left;
+
+}
+
+.footer-links {
+
+	letter-spacing:1px;
+	
+		h6, li {
+			text-align:right;
+			font-size:10px;
+				& :hover {
+					color:#313131;
+				}
+			}
+}
+
+@import url(http://fonts.googleapis.com/css?family=Cantora+One);
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower);
