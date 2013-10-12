@@ -11,11 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131011083847) do
+ActiveRecord::Schema.define(version: 20131012154041) do
 
   create_table "blogs", force: true do |t|
     t.string   "naslov"
     t.text     "opis"
+    t.string   "categories"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

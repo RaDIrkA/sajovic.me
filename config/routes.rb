@@ -1,6 +1,6 @@
 SajovicMe::Application.routes.draw do
-  resources :blogs
 
+  resources :blogs
 
   get "Contact_Me" => "domov#contact", :as => "contact_us"
   get "Projects" => "domov#projects", :as => "our_projects"
