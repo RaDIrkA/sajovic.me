@@ -65,6 +65,7 @@ SajovicMe::Application.configure do
 
   # Precompile additional assets
   config.assets.precompile += %w( .svg .eot .woff .ttf )
+  config.assets.precompile += ['ckeditor/*']
 
 
   # Ignore bad email addresses and do not raise email delivery errors.
