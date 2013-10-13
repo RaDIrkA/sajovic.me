@@ -6,7 +6,8 @@ gem 'rails', '4.0.0'
 # Use postgresql as the database for Active Record
 gem 'pg'
 
-gem 'mail_form'
+gem 'ckeditor'
+gem 'paperclip'
 # Use SCSS for stylesheets
 group :assets do
 	gem 'sass-rails', '~> 4.0.0'

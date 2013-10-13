@@ -15,7 +15,7 @@
 		<ul class="side-nav clanki">		
 			<li class="naslov"><%= link_to blog.naslov, blog %></li>
 			<li class="ustvarjen">Written on <%= blog.created_at.strftime('%b %d, %Y') %></li>
-			<li class="opis"><%= truncate(strip_tags(blog.opis),length: 100) %></li>
+			<li class="opis"><%= truncate(strip_tags(blog.opis, as: :ckeditor),length: 100) %></li>
 			<li class="divider"></li>
 		</ul>
 	<% end %>	

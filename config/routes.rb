@@ -1,5 +1,6 @@
 SajovicMe::Application.routes.draw do
 
+  mount Ckeditor::Engine => '/ckeditor'
   resources :blogs
   
 
