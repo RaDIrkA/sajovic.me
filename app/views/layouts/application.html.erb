@@ -21,18 +21,35 @@
   </head>
 
   <body>
-<div class="top-bar">
-  <div id="glavni-menu-sticky"></div>
+
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name"></h1>
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>  
+    </ul>
+
+    <section class="top-bar-section">
+      <ul class="right">
+        <li class="divider"></li>
+        <li></li>
+      </ul> 
+    </section>
   
-</div>
-<div class="row">
-  <div class="large-3 small-8 columns">
-    <div class="logo">
-      <img src="<%= asset_path 'assets/bs_logo.png' %>" alt="Blaz Sajovic logo">
-    </div>
-    <div class="large-3 columns">
+  </nav>
+
+
+
+  <div class="row">
+
+
+
+    <div class="large-3 small-8 columns">
+      <div class="logo">
+        <img src="<%= asset_path 'assets/bs_logo.png' %>" alt="Blaz Sajovic logo">
+      </div>
+      <div class="large-3 columns">
   
-       <ul class="side-nav menu">
+        <ul class="side-nav menu">
           <li class="divider"></li>
           <li><%= link_to_unless_current "About me", domov_path %></li>
           <li class="divider"></li>
@@ -44,53 +61,79 @@
           <li class="divider"></li>
         </ul> 
 
-      <div class="quotes">
-        <h6>Quotes</h6>
-      <div class="all_quotes">  
-        <h5>The hacker mindset doesn't actually see what happens on the other side, to the victim.</h5>
-        <hr>
-        <h4>Kevin Mitnick</h4>
-      </div>  
-      <div class="all_quotes">  
-        <h5>“Measuring programming progress by lines of code is like measuring aircraft building progress by weight.”</h5>
-        <hr>
-        <h4>Bill Gates</h4>
-      </div>
-      <div class="all_quotes">  
-        <h5>“First learn computer science and all the theory.  Next develop a programming style.  Then forget all that and just hack.”</h5>
-        <hr>
-        <h4>George Carrette</h4>
-      </div>
+        <div class="quotes">
+          <h6>Quotes</h6>
+        <div class="all_quotes">  
+          <h5>The hacker mindset doesn't actually see what happens on the other side, to the victim.</h5>
+          <hr>
+          <h4>Kevin Mitnick</h4>
+        </div>  
+        <div class="all_quotes">  
+          <h5>“Measuring programming progress by lines of code is like measuring aircraft building progress by weight.”</h5>
+          <hr>
+          <h4>Bill Gates</h4>
+        </div>
+        <div class="all_quotes">  
+          <h5>“First learn computer science and all the theory.  Next develop a programming style.  Then forget all that and just hack.”</h5>
+          <hr>
+          <h4>George Carrette</h4>
+        </div>
 
-      <div class="all_quotes">  
-        <h5>I get hired by companies to hack into their systems and break into their physical facilities to find security holes. Our success rate is 100%; we've always found a hole.</h5>
-        <hr>
-        <h4>Kevin Mitnick</h4>
-      </div>
-      <div class="all_quotes">  
-        <h5>“Microsoft has a new version out, Windows XP, which according to everybody is the ‘most reliable Windows ever.‘  To me, this is like saying that asparagus is ‘the most articulate vegetable ever.‘ “</h5>
-        <hr>
-        <h4>Dave Barry</h4>
-      </div>      
-      <div class="all_quotes">  
-        <h5>“Software is like sex: It’s better when it’s free.”</h5>
-        <hr>
-        <h4>Steve McConnell</h4>
-      </div>
+        <div class="all_quotes">  
+          <h5>I get hired by companies to hack into their systems and break into their physical facilities to find security holes. Our success rate is 100%; we've always found a hole.</h5>
+          <hr>
+          <h4>Kevin Mitnick</h4>
+        </div>
+        <div class="all_quotes">  
+          <h5>“Microsoft has a new version out, Windows XP, which according to everybody is the ‘most reliable Windows ever.‘  To me, this is like saying that asparagus is ‘the most articulate vegetable ever.‘ “</h5>
+          <hr>
+          <h4>Dave Barry</h4>
+        </div>      
+        <div class="all_quotes">  
+          <h5>“Software is like sex: It’s better when it’s free.”</h5>
+          <hr>
+          <h4>Steve McConnell</h4>
+        </div>
       </div>  
     </div>
   </div>
 
 
-  <div class="large-9 columns">
+  <div class="large-8 columns">
     <%= yield %>
   </div>
-</div>
+
+  
+  <div class="large-1 columns">
+    <div class="fix">
+    <div class="small-6 columns">
+      <ul class="side-nav">
+        <li>Follow me</li>
+        <li class="divider"></li>
+        <li>FB</li>
+        <li class="divider"></li>
+        <li>TWIT</li>
+        <li class="divider"></li>
+        <li>GitHub</li>
+        <li class="divider"></li>
+        <li>LinkeId</li> 
+        <li class="divider"></li>
+      </ul>
+     </div> 
+    </div>
+  </div>
+
+  
+
+  </div>
+  
+
+ 
 
 
 
-<hr>
-<div class="row">
+  <hr>
+  <div class="row">
   
     <div class="large-5 large-offset-1 columns">
       <div class="footer-nav">
@@ -103,29 +146,19 @@
         <p class="copyright">&copy; 2013 Blaz Sajovic. All rights reserved.<br>
         Innovative Web & Computers Services &raquo; <%= link_to "Spletko.eu", "http://spletko.eu/", :target => "_blank" %></p>
       </div>
-      
     </div>
 
   
     <div class="large-5 large-offset-1 columns">
       <div class="footer-links">
-      <h6>Powered by <%= link_to "Ruby on rails", "http://rubyonrails.org/", :target => "_blank" %><br>
-      Build on <%= link_to "Foundation", "http://foundation.zurb.com/", :target => "_blank" %> with my own customizations <br>
-      Deployed => <%= link_to "Heroku", "https://www.heroku.com/", :target => "_blank" %><br>
-      Git Repository => <%= link_to "GitHub", "https://github.com/", :target => "_blank" %></h6>
-      
+        <h6>Powered by <%= link_to "Ruby on rails", "http://rubyonrails.org/", :target => "_blank" %><br>
+          Build on <%= link_to "Foundation", "http://foundation.zurb.com/", :target => "_blank" %> with my own customizations <br>
+          Deployed => <%= link_to "Heroku", "https://www.heroku.com/", :target => "_blank" %><br>
+          Git Repository => <%= link_to "GitHub", "https://github.com/", :target => "_blank" %></h6>
       </div>
-      
     </div>
 
-  
-  
-
-</div>
-    
-
-    
-    <%= javascript_include_tag "application" %>
-
+  </div>  
+  <%= javascript_include_tag "application" %>
   </body>
 </html>

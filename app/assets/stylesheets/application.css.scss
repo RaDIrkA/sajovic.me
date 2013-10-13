@@ -11,8 +11,16 @@
  *= require_self
  *= require foundation_and_overrides
  *= require_tree .
-
  */
+
+
+.fix {position:fixed;border:1px solid red;z-index:9999;}
+
+
+
+
+
+
 .menu {
 	
 	width:200px;
