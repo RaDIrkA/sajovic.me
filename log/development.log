@@ -90618,3 +90618,351 @@ Started GET "/assets/ckeditor/styles.js?t=D6IE" for 127.0.0.1 at 2013-10-14 00:4
 
 
 Started GET "/assets/ckeditor/contents.css" for 127.0.0.1 at 2013-10-14 00:45:16 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-14 01:06:48 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DomovController#index as HTML
+  Rendered domov/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 638ms (Views: 576.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bs_logo.png" for 127.0.0.1 at 2013-10-14 01:06:49 +0200
+
+
+Started GET "/assets/me.jpg" for 127.0.0.1 at 2013-10-14 01:06:49 +0200
+
+
+Started GET "/assets/me-park.jpg" for 127.0.0.1 at 2013-10-14 01:06:49 +0200
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2013-10-14 01:06:49 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:49 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:49 +0200
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:49 +0200
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:49 +0200
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:49 +0200
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:50 +0200
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:50 +0200
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:50 +0200
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:50 +0200
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:50 +0200
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:50 +0200
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:50 +0200
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:50 +0200
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:50 +0200
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:50 +0200
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:50 +0200
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:50 +0200
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:50 +0200
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:50 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:50 +0200
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:50 +0200
+
+
+Started GET "/assets/domov.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:50 +0200
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:50 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:50 +0200
+
+
+Started GET "/blogs" for 127.0.0.1 at 2013-10-14 01:06:53 +0200
+Processing by BlogsController#index as HTML
+  [1m[35mBlog Load (1.1ms)[0m  SELECT "blogs".* FROM "blogs"
+  Rendered blogs/index.html.erb within layouts/application (107.8ms)
+Completed 200 OK in 175ms (Views: 161.7ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/bs_logo.png" for 127.0.0.1 at 2013-10-14 01:06:54 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:54 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:54 +0200
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:54 +0200
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:54 +0200
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:54 +0200
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:54 +0200
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:54 +0200
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:54 +0200
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:54 +0200
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:54 +0200
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:54 +0200
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:54 +0200
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:54 +0200
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:54 +0200
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:54 +0200
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:54 +0200
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:54 +0200
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:54 +0200
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:54 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:54 +0200
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:54 +0200
+
+
+Started GET "/assets/domov.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:54 +0200
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:54 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:54 +0200
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2013-10-14 01:06:57 +0200
+Processing by BlogsController#new as HTML
+  Rendered blogs/_form.html.erb (153.7ms)
+  Rendered blogs/new.html.erb within layouts/application (176.2ms)
+Completed 200 OK in 239ms (Views: 237.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bs_logo.png" for 127.0.0.1 at 2013-10-14 01:06:57 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:57 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:57 +0200
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:58 +0200
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:58 +0200
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:58 +0200
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:58 +0200
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:58 +0200
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:58 +0200
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:58 +0200
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:58 +0200
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:58 +0200
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:58 +0200
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:58 +0200
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:58 +0200
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:58 +0200
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:58 +0200
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:58 +0200
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:58 +0200
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:58 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:58 +0200
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:58 +0200
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:58 +0200
+
+
+Started GET "/assets/domov.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:58 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 01:06:58 +0200
+
+
+Started GET "/assets/ckeditor/contents.css" for 127.0.0.1 at 2013-10-14 01:06:59 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-14 01:07:11 +0200
+Processing by DomovController#index as HTML
+  Rendered domov/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 65ms (Views: 62.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bs_logo.png" for 127.0.0.1 at 2013-10-14 01:07:11 +0200
+
+
+Started GET "/assets/me.jpg" for 127.0.0.1 at 2013-10-14 01:07:11 +0200
+
+
+Started GET "/assets/me-park.jpg" for 127.0.0.1 at 2013-10-14 01:07:11 +0200
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2013-10-14 01:07:11 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 01:07:11 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 01:07:11 +0200
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-10-14 01:07:11 +0200
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-10-14 01:07:11 +0200
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-10-14 01:07:11 +0200
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-10-14 01:07:11 +0200
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 01:07:11 +0200
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-10-14 01:07:11 +0200
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-10-14 01:07:11 +0200
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-10-14 01:07:11 +0200
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-10-14 01:07:11 +0200
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-10-14 01:07:11 +0200
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-10-14 01:07:11 +0200
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-10-14 01:07:11 +0200
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-10-14 01:07:11 +0200
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-10-14 01:07:11 +0200
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-10-14 01:07:11 +0200
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-10-14 01:07:12 +0200
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-10-14 01:07:12 +0200
+
+
+Started GET "/assets/domov.js?body=1" for 127.0.0.1 at 2013-10-14 01:07:12 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-14 01:07:12 +0200
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-10-14 01:07:12 +0200
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2013-10-14 01:07:12 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 01:07:12 +0200
