@@ -12,11 +12,23 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require ckeditor/ckeditor
+//= require ckeditor/init
 //= require foundation
 //= require turbolinks
 //= require_tree .
+(function() {
+  if (typeof window['CKEDITOR_BASEPATH'] === "undefined" || window['CKEDITOR_BASEPATH'] === null) {
+    window['CKEDITOR_BASEPATH'] = "<%= config.relative_url_root %>/assets/ckeditor/";
+  }
+}).call(this);
 
+function ck_load() {
+  $('.ckeditor').each(function(){
+    CKEDITOR.replace( $(this).attr('name') );
+  });
+}
+
+$(document).on('page:load', ck_load);
 
 $(function(){ $(document).foundation(); });
 
