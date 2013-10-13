@@ -3,14 +3,13 @@
 <%= l Time.now %>
 <div class="row">
 	<div class="large-10 columns blog">
-	<% for blog in @blogs  %>
-		<h4><%= blog.naslov %></h4>
+		<h4><%= @blog.naslov %></h4>
 			<ul class="side-nav">
 			<li class="divider"></li>
-			<li><%= raw(blog.opis) %></li>
+			<li><%= raw(@blog.opis) %></li>
 			<li class="divider"></li>
 		</ul>
-	<% end %>	
+
 	</div>
 </div>
 
