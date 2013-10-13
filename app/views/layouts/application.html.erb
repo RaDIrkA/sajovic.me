@@ -18,6 +18,7 @@
   	<%= stylesheet_link_tag    "application", :media => "all" %>
   	<%= javascript_include_tag "vendor/custom.modernizr" %>
     <%= javascript_include_tag "ckeditor/ckeditor.js" %>
+
     <%= csrf_meta_tags %>
   </head>
 
@@ -164,6 +165,7 @@
   <script type="text/javascript">$(document).ready(function() {
     if ($("textarea").length > 0) {
       var data = $("textarea");
+      var CKEDITOR_BASEPATH = '/assets/ckeditor/';
       $.each(data, function(i) {
         CKEDITOR.replace(data[i].id);
       });
