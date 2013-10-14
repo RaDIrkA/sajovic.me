@@ -91219,3 +91219,926 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 01:45:25
 
 
 Started GET "/assets/ckeditor/contents.css" for 127.0.0.1 at 2013-10-14 01:45:26 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-14 02:25:56 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (2.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DomovController#index as HTML
+  Rendered domov/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 885ms (Views: 809.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-14 02:25:57 +0200
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-10-14 02:25:57 +0200
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-10-14 02:25:57 +0200
+
+
+Started GET "/assets/domov.css?body=1" for 127.0.0.1 at 2013-10-14 02:25:58 +0200
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-10-14 02:25:58 +0200
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2013-10-14 02:25:58 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 02:25:58 +0200
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-10-14 02:25:58 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 02:25:58 +0200
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-10-14 02:25:58 +0200
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-10-14 02:25:58 +0200
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-10-14 02:25:58 +0200
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 02:25:58 +0200
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-10-14 02:25:58 +0200
+
+
+Started GET "/assets/bs_logo.png" for 127.0.0.1 at 2013-10-14 02:25:58 +0200
+
+
+Started GET "/assets/me.jpg" for 127.0.0.1 at 2013-10-14 02:25:58 +0200
+
+
+Started GET "/assets/me-park.jpg" for 127.0.0.1 at 2013-10-14 02:25:58 +0200
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2013-10-14 02:25:58 +0200
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-10-14 02:25:59 +0200
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-10-14 02:25:59 +0200
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:00 +0200
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:00 +0200
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:00 +0200
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:00 +0200
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:00 +0200
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:00 +0200
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:00 +0200
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:00 +0200
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:00 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:00 +0200
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:00 +0200
+
+
+Started GET "/assets/domov.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:00 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:00 +0200
+
+
+Started GET "/Blogs" for 127.0.0.1 at 2013-10-14 02:26:03 +0200
+Processing by DomovController#blogs as HTML
+  [1m[35mBlog Load (1.4ms)[0m  SELECT "blogs".* FROM "blogs" ORDER BY "blogs"."id" DESC LIMIT 10
+  Rendered domov/blogs.html.erb within layouts/application (95.1ms)
+Completed 200 OK in 285ms (Views: 148.2ms | ActiveRecord: 22.0ms)
+
+
+Started GET "/assets/bs_logo.png" for 127.0.0.1 at 2013-10-14 02:26:03 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:03 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:04 +0200
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:04 +0200
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:04 +0200
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:04 +0200
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:04 +0200
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:04 +0200
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:04 +0200
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:04 +0200
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:04 +0200
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:04 +0200
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:04 +0200
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:04 +0200
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:04 +0200
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:04 +0200
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:04 +0200
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:04 +0200
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:04 +0200
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:04 +0200
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:04 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:04 +0200
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:04 +0200
+
+
+Started GET "/assets/domov.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:04 +0200
+
+
+Started GET "/blogs" for 127.0.0.1 at 2013-10-14 02:26:09 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.8ms)[0m  [1mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (57.4ms)
+Completed 200 OK in 129ms (Views: 121.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/bs_logo.png" for 127.0.0.1 at 2013-10-14 02:26:10 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:10 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:10 +0200
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:10 +0200
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:10 +0200
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:10 +0200
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:10 +0200
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:10 +0200
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:10 +0200
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:10 +0200
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:10 +0200
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:10 +0200
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:10 +0200
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:10 +0200
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:10 +0200
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:10 +0200
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:10 +0200
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:10 +0200
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:10 +0200
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:10 +0200
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:10 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:10 +0200
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:10 +0200
+
+
+Started GET "/assets/domov.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:10 +0200
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2013-10-14 02:26:13 +0200
+Processing by BlogsController#new as HTML
+  Rendered blogs/_form.html.erb (34.2ms)
+  Rendered blogs/new.html.erb within layouts/application (45.0ms)
+Completed 200 OK in 110ms (Views: 105.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bs_logo.png" for 127.0.0.1 at 2013-10-14 02:26:13 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:13 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:13 +0200
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:13 +0200
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:13 +0200
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:13 +0200
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:13 +0200
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:13 +0200
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:14 +0200
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:14 +0200
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:14 +0200
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:14 +0200
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:14 +0200
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:14 +0200
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:14 +0200
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:14 +0200
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:14 +0200
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:14 +0200
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:14 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:14 +0200
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:14 +0200
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:14 +0200
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:14 +0200
+
+
+Started GET "/assets/domov.js?body=1" for 127.0.0.1 at 2013-10-14 02:26:14 +0200
+
+
+Started GET "/assets/ckeditor/config.js?t=D6IE" for 127.0.0.1 at 2013-10-14 02:26:14 +0200
+
+
+Started GET "/assets/ckeditor/skins/moono/editor.css?t=D6IE" for 127.0.0.1 at 2013-10-14 02:26:15 +0200
+
+
+Started GET "/assets/ckeditor/lang/en.js?t=D6IE" for 127.0.0.1 at 2013-10-14 02:26:15 +0200
+
+
+Started GET "/assets/ckeditor/styles.js?t=D6IE" for 127.0.0.1 at 2013-10-14 02:26:15 +0200
+
+
+Started GET "/assets/ckeditor/contents.css" for 127.0.0.1 at 2013-10-14 02:26:15 +0200
+
+
+Started GET "/assets/ckeditor/plugins/image/dialogs/image.js?t=D6IE" for 127.0.0.1 at 2013-10-14 02:26:33 +0200
+
+
+Started GET "/assets/ckeditor/skins/moono/dialog.css?t=D6IE" for 127.0.0.1 at 2013-10-14 02:26:33 +0200
+
+
+Started GET "/assets/ckeditor/contents.css" for 127.0.0.1 at 2013-10-14 02:26:55 +0200
+
+
+Started GET "/assets/ckeditor/contents.css" for 127.0.0.1 at 2013-10-14 02:27:01 +0200
+
+
+Started GET "/assets/ckeditor/skins/moono/editor.css?t=D6IE" for 127.0.0.1 at 2013-10-14 02:27:53 +0200
+
+
+Started GET "/assets/ckeditor/plugins/clipboard/dialogs/paste.js?t=D6IE" for 127.0.0.1 at 2013-10-14 02:27:54 +0200
+
+
+Started POST "/blogs" for 127.0.0.1 at 2013-10-14 02:28:24 +0200
+Processing by BlogsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KYapO8Wq63356Xs4ETILyImjuW9CFWesPNZ/bolodKk=", "blog"=>{"naslov"=>"", "opis"=>"<pre>\r\n<em>//config.js</em>\r\n<em>/*</em>\r\n<em>Copyright (c) 2003-2011, CKSource - Frederico Knabben. All rights reserved.</em>\r\n<em>For licensing, see LICENSE.html or http://ckeditor.com/license</em>\r\n<em>*/</em>\r\n\r\nCKEDITOR.editorConfig <strong>=</strong> <strong>function</strong>( config )\r\n{\r\n  config.language <strong>=</strong> <span style=\"color:rgb(221, 17, 68)\">&#39;en&#39;</span>;\r\n  config.uiColor <strong>=</strong> <span style=\"color:rgb(221, 17, 68)\">&#39;#FFFFFF&#39;</span>;\r\n  config.width <strong>=</strong> <span style=\"color:rgb(221, 17, 68)\">&quot;442&quot;</span>;\r\n\r\n  config.toolbarGroups <strong>=</strong> [\r\n      { name<strong>:</strong> <span style=\"color:rgb(221, 17, 68)\">&#39;clipboard&#39;</span>,   groups<strong>:</strong> [ <span style=\"color:rgb(221, 17, 68)\">&#39;clipboard&#39;</span>, <span style=\"color:rgb(221, 17, 68)\">&#39;undo&#39;</span> ] },\r\n      { name<strong>:</strong> <span style=\"color:rgb(221, 17, 68)\">&#39;links&#39;</span> },\r\n      { name<strong>:</strong> <span style=\"color:rgb(221, 17, 68)\">&#39;tools&#39;</span> },\r\n      <span style=\"color:rgb(221, 17, 68)\">&#39;/&#39;</span>,\r\n      { name<strong>:</strong> <span style=\"color:rgb(221, 17, 68)\">&#39;insert&#39;</span> },\r\n      { name<strong>:</strong> <span style=\"color:rgb(221, 17, 68)\">&#39;paragraph&#39;</span>,   groups<strong>:</strong> [ <span style=\"color:rgb(221, 17, 68)\">&#39;list&#39;</span>, <span style=\"color:rgb(221, 17, 68)\">&#39;indent&#39;</span>, <span style=\"color:rgb(221, 17, 68)\">&#39;blocks&#39;</span> ] },\r\n      { name<strong>:</strong> <span style=\"color:rgb(221, 17, 68)\">&#39;basicstyles&#39;</span>, groups<strong>:</strong> [ <span style=\"color:rgb(221, 17, 68)\">&#39;basicstyles&#39;</span>, <span style=\"color:rgb(221, 17, 68)\">&#39;cleanup&#39;</span> ] },\r\n      { name<strong>:</strong> <span style=\"color:rgb(221, 17, 68)\">&#39;styles&#39;</span>, groups<strong>:</strong> [ <span style=\"color:rgb(221, 17, 68)\">&#39;colors&#39;</span> ] },\r\n      { name<strong>:</strong> <span style=\"color:rgb(221, 17, 68)\">&#39;others&#39;</span> }\r\n  ];\r\n\r\n  config.removeButtons <strong>=</strong> <span style=\"color:rgb(221, 17, 68)\">&#39;Flash,Iframe,Smiley,Subscript,Superscript,Font,FontSize,SpecialChar,CreateDiv,PageBreak,Anchor,ShowBlocks&#39;</span>;\r\n  config.removeDialogTabs <strong>=</strong> <span style=\"color:rgb(221, 17, 68)\">&#39;image:advanced&#39;</span>;\r\n  config.extraPlugins <strong>=</strong> <span style=\"color:rgb(221, 17, 68)\">&#39;clipboard,pastetext&#39;</span>;\r\n  config.allowedContent <strong>=</strong> <strong>true</strong>;\r\n  config.forcePasteAsPlainText <strong>=</strong> <strong>true</strong>;\r\n\r\n  <em>/* Filebrowser routes */</em>\r\n  <em>// The location of an external file browser, that should be launched when &quot;Browse Server&quot; button is pressed.</em>\r\n  config.filebrowserBrowseUrl <strong>=</strong> <span style=\"color:rgb(221, 17, 68)\">&quot;/ckeditor/attachment_files&quot;</span>;\r\n\r\n  <em>// The location of an external file browser, that should be launched when &quot;Browse Server&quot; button is pressed in the Flash dialog.</em>\r\n  config.filebrowserFlashBrowseUrl <strong>=</strong> <span style=\"color:rgb(221, 17, 68)\">&quot;/ckeditor/attachment_files&quot;</span>;\r\n\r\n  <em>// The location of a script that handles file uploads in the Flash dialog.</em>\r\n  config.filebrowserFlashUploadUrl <strong>=</strong> <span style=\"color:rgb(221, 17, 68)\">&quot;/ckeditor/attachment_files&quot;</span>;\r\n\r\n  <em>// The location of an external file browser, that should be launched when &quot;Browse Server&quot; button is pressed in the Link tab of Image dialog</em>\r\n  config.filebrowserImageBrowseLinkUrl <strong>=</strong> <span style=\"color:rgb(221, 17, 68)\">&quot;/ckeditor/pictures&quot;</span>;\r\n\r\n  <em>// The location of an external file browser, that should be launched when &quot;Browse Server&quot; button is pressed in the Image dialog.</em>\r\n  config.filebrowserImageBrowseUrl <strong>=</strong> <span style=\"color:rgb(221, 17, 68)\">&quot;/ckeditor/pictures&quot;</span>;\r\n\r\n  <em>// The location of a script that handles file uploads in the Image dialog.</em>\r\n  config.filebrowserImageUploadUrl <strong>=</strong> <span style=\"color:rgb(221, 17, 68)\">&quot;/ckeditor/pictures&quot;</span>;\r\n\r\n  <em>// The location of a script that handles file uploads.</em>\r\n  config.filebrowserUploadUrl <strong>=</strong> <span style=\"color:rgb(221, 17, 68)\">&quot;/ckeditor/attachment_files&quot;</span>;\r\n\r\n  <em>// Rails CSRF token</em>\r\n  config.filebrowserParams <strong>=</strong> <strong>function</strong>(){\r\n    <strong>var</strong> csrf_token, csrf_param, meta,\r\n        metas <strong>=</strong> <span style=\"color:rgb(0, 134, 179)\">document</span>.getElementsByTagName(<span style=\"color:rgb(221, 17, 68)\">&#39;meta&#39;</span>),\r\n        params <strong>=</strong> <strong>new</strong> <span style=\"color:rgb(0, 134, 179)\">Object</span>();\r\n\r\n    <strong>for</strong> ( <strong>var</strong> i <strong>=</strong> <span style=\"color:rgb(0, 153, 153)\">0</span> ; i <strong>&lt;</strong> metas.length ; i<strong>++</strong> ){\r\n      meta <strong>=</strong> metas[i];\r\n\r\n      <strong>switch</strong>(meta.name) {\r\n        <strong>case</strong> <span style=\"color:rgb(221, 17, 68)\">&quot;csrf-token&quot;</span><strong>:</strong>\r\n          csrf_token <strong>=</strong> meta.content;\r\n          <strong>break</strong>;\r\n        <strong>case</strong> <span style=\"color:rgb(221, 17, 68)\">&quot;csrf-param&quot;</span><strong>:</strong>\r\n          csrf_param <strong>=</strong> meta.content;\r\n          <strong>break</strong>;\r\n        <strong>default</strong><strong>:</strong>\r\n          <strong>continue</strong>;\r\n      }\r\n    }\r\n\r\n    <strong>if</strong> (csrf_param <strong>!==</strong> <strong>undefined</strong> <strong>&amp;&amp;</strong> csrf_token <strong>!==</strong> <strong>undefined</strong>) {\r\n      params[csrf_param] <strong>=</strong> csrf_token;\r\n    }\r\n\r\n    <strong>return</strong> params;\r\n  };\r\n\r\n  config.addQueryString <strong>=</strong> <strong>function</strong>( url, params ){\r\n    <strong>var</strong> queryString <strong>=</strong> [];\r\n\r\n    <strong>if</strong> ( <strong>!</strong>params ) {\r\n      <strong>return</strong> url;\r\n    } <strong>else</strong> {\r\n      <strong>for</strong> ( <strong>var</strong> i <strong>in</strong> params )\r\n        queryString.push( i <strong>+</strong> <span style=\"color:rgb(221, 17, 68)\">&quot;=&quot;</span> <strong>+</strong> <span style=\"color:rgb(0, 134, 179)\">encodeURIComponent</span>( params[ i ] ) );\r\n    }\r\n\r\n    <strong>return</strong> url <strong>+</strong> ( ( url.indexOf( <span style=\"color:rgb(221, 17, 68)\">&quot;?&quot;</span> ) <strong>!=</strong> <strong>-</strong><span style=\"color:rgb(0, 153, 153)\">1</span> ) <strong>?</strong> <span style=\"color:rgb(221, 17, 68)\">&quot;&amp;&quot;</span> <strong>:</strong> <span style=\"color:rgb(221, 17, 68)\">&quot;?&quot;</span> ) <strong>+</strong> queryString.join( <span style=\"color:rgb(221, 17, 68)\">&quot;&amp;&quot;</span> );\r\n  };\r\n\r\n  <em>// Integrate Rails CSRF token into file upload dialogs (link, image, attachment and flash)</em>\r\n  CKEDITOR.on( <span style=\"color:rgb(221, 17, 68)\">&#39;dialogDefinition&#39;</span>, <strong>function</strong>( ev ){\r\n    <em>// Take the dialog name and its definition from the event data.</em>\r\n    <strong>var</strong> dialogName <strong>=</strong> ev.data.name;\r\n    <strong>var</strong> dialogDefinition <strong>=</strong> ev.data.definition;\r\n    <strong>var</strong> content, upload;\r\n\r\n    <strong>if</strong> (CKEDITOR.tools.indexOf([<span style=\"color:rgb(221, 17, 68)\">&#39;link&#39;</span>, <span style=\"color:rgb(221, 17, 68)\">&#39;image&#39;</span>, <span style=\"color:rgb(221, 17, 68)\">&#39;attachment&#39;</span>, <span style=\"color:rgb(221, 17, 68)\">&#39;flash&#39;</span>], dialogName) <strong>&gt;</strong> <strong>-</strong><span style=\"color:rgb(0, 153, 153)\">1</span>) {\r\n      content <strong>=</strong> (dialogDefinition.getContents(<span style=\"color:rgb(221, 17, 68)\">&#39;Upload&#39;</span>) <strong>||</strong> dialogDefinition.getContents(<span style=\"color:rgb(221, 17, 68)\">&#39;upload&#39;</span>));\r\n      upload <strong>=</strong> (content <strong>==</strong> <strong>null</strong> <strong>?</strong> <strong>null</strong> <strong>:</strong> content.get(<span style=\"color:rgb(221, 17, 68)\">&#39;upload&#39;</span>));\r\n\r\n      <strong>if</strong> (upload <strong>&amp;&amp;</strong> upload.filebrowser <strong>&amp;&amp;</strong> upload.filebrowser[<span style=\"color:rgb(221, 17, 68)\">&#39;params&#39;</span>] <strong>===</strong> <strong>undefined</strong>) {\r\n        upload.filebrowser[<span style=\"color:rgb(221, 17, 68)\">&#39;params&#39;</span>] <strong>=</strong> config.filebrowserParams();\r\n        upload.action <strong>=</strong> config.addQueryString(upload.action, upload.filebrowser[<span style=\"color:rgb(221, 17, 68)\">&#39;params&#39;</span>]);\r\n      }\r\n    }\r\n  });\r\n};</pre>\r\n"}, "commit"=>"Create Blog"}
+  [1m[35m (5.8ms)[0m  BEGIN
+  [1m[36mSQL (49.5ms)[0m  [1mINSERT INTO "blogs" ("created_at", "naslov", "opis", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Mon, 14 Oct 2013 00:28:24 UTC +00:00], ["naslov", ""], ["opis", "<pre>\r\n<em>//config.js</em>\r\n<em>/*</em>\r\n<em>Copyright (c) 2003-2011, CKSource - Frederico Knabben. All rights reserved.</em>\r\n<em>For licensing, see LICENSE.html or http://ckeditor.com/license</em>\r\n<em>*/</em>\r\n\r\nCKEDITOR.editorConfig <strong>=</strong> <strong>function</strong>( config )\r\n{\r\n  config.language <strong>=</strong> <span style=\"color:rgb(221, 17, 68)\">&#39;en&#39;</span>;\r\n  config.uiColor <strong>=</strong> <span style=\"color:rgb(221, 17, 68)\">&#39;#FFFFFF&#39;</span>;\r\n  config.width <strong>=</strong> <span style=\"color:rgb(221, 17, 68)\">&quot;442&quot;</span>;\r\n\r\n  config.toolbarGroups <strong>=</strong> [\r\n      { name<strong>:</strong> <span style=\"color:rgb(221, 17, 68)\">&#39;clipboard&#39;</span>,   groups<strong>:</strong> [ <span style=\"color:rgb(221, 17, 68)\">&#39;clipboard&#39;</span>, <span style=\"color:rgb(221, 17, 68)\">&#39;undo&#39;</span> ] },\r\n      { name<strong>:</strong> <span style=\"color:rgb(221, 17, 68)\">&#39;links&#39;</span> },\r\n      { name<strong>:</strong> <span style=\"color:rgb(221, 17, 68)\">&#39;tools&#39;</span> },\r\n      <span style=\"color:rgb(221, 17, 68)\">&#39;/&#39;</span>,\r\n      { name<strong>:</strong> <span style=\"color:rgb(221, 17, 68)\">&#39;insert&#39;</span> },\r\n      { name<strong>:</strong> <span style=\"color:rgb(221, 17, 68)\">&#39;paragraph&#39;</span>,   groups<strong>:</strong> [ <span style=\"color:rgb(221, 17, 68)\">&#39;list&#39;</span>, <span style=\"color:rgb(221, 17, 68)\">&#39;indent&#39;</span>, <span style=\"color:rgb(221, 17, 68)\">&#39;blocks&#39;</span> ] },\r\n      { name<strong>:</strong> <span style=\"color:rgb(221, 17, 68)\">&#39;basicstyles&#39;</span>, groups<strong>:</strong> [ <span style=\"color:rgb(221, 17, 68)\">&#39;basicstyles&#39;</span>, <span style=\"color:rgb(221, 17, 68)\">&#39;cleanup&#39;</span> ] },\r\n      { name<strong>:</strong> <span style=\"color:rgb(221, 17, 68)\">&#39;styles&#39;</span>, groups<strong>:</strong> [ <span style=\"color:rgb(221, 17, 68)\">&#39;colors&#39;</span> ] },\r\n      { name<strong>:</strong> <span style=\"color:rgb(221, 17, 68)\">&#39;others&#39;</span> }\r\n  ];\r\n\r\n  config.removeButtons <strong>=</strong> <span style=\"color:rgb(221, 17, 68)\">&#39;Flash,Iframe,Smiley,Subscript,Superscript,Font,FontSize,SpecialChar,CreateDiv,PageBreak,Anchor,ShowBlocks&#39;</span>;\r\n  config.removeDialogTabs <strong>=</strong> <span style=\"color:rgb(221, 17, 68)\">&#39;image:advanced&#39;</span>;\r\n  config.extraPlugins <strong>=</strong> <span style=\"color:rgb(221, 17, 68)\">&#39;clipboard,pastetext&#39;</span>;\r\n  config.allowedContent <strong>=</strong> <strong>true</strong>;\r\n  config.forcePasteAsPlainText <strong>=</strong> <strong>true</strong>;\r\n\r\n  <em>/* Filebrowser routes */</em>\r\n  <em>// The location of an external file browser, that should be launched when &quot;Browse Server&quot; button is pressed.</em>\r\n  config.filebrowserBrowseUrl <strong>=</strong> <span style=\"color:rgb(221, 17, 68)\">&quot;/ckeditor/attachment_files&quot;</span>;\r\n\r\n  <em>// The location of an external file browser, that should be launched when &quot;Browse Server&quot; button is pressed in the Flash dialog.</em>\r\n  config.filebrowserFlashBrowseUrl <strong>=</strong> <span style=\"color:rgb(221, 17, 68)\">&quot;/ckeditor/attachment_files&quot;</span>;\r\n\r\n  <em>// The location of a script that handles file uploads in the Flash dialog.</em>\r\n  config.filebrowserFlashUploadUrl <strong>=</strong> <span style=\"color:rgb(221, 17, 68)\">&quot;/ckeditor/attachment_files&quot;</span>;\r\n\r\n  <em>// The location of an external file browser, that should be launched when &quot;Browse Server&quot; button is pressed in the Link tab of Image dialog</em>\r\n  config.filebrowserImageBrowseLinkUrl <strong>=</strong> <span style=\"color:rgb(221, 17, 68)\">&quot;/ckeditor/pictures&quot;</span>;\r\n\r\n  <em>// The location of an external file browser, that should be launched when &quot;Browse Server&quot; button is pressed in the Image dialog.</em>\r\n  config.filebrowserImageBrowseUrl <strong>=</strong> <span style=\"color:rgb(221, 17, 68)\">&quot;/ckeditor/pictures&quot;</span>;\r\n\r\n  <em>// The location of a script that handles file uploads in the Image dialog.</em>\r\n  config.filebrowserImageUploadUrl <strong>=</strong> <span style=\"color:rgb(221, 17, 68)\">&quot;/ckeditor/pictures&quot;</span>;\r\n\r\n  <em>// The location of a script that handles file uploads.</em>\r\n  config.filebrowserUploadUrl <strong>=</strong> <span style=\"color:rgb(221, 17, 68)\">&quot;/ckeditor/attachment_files&quot;</span>;\r\n\r\n  <em>// Rails CSRF token</em>\r\n  config.filebrowserParams <strong>=</strong> <strong>function</strong>(){\r\n    <strong>var</strong> csrf_token, csrf_param, meta,\r\n        metas <strong>=</strong> <span style=\"color:rgb(0, 134, 179)\">document</span>.getElementsByTagName(<span style=\"color:rgb(221, 17, 68)\">&#39;meta&#39;</span>),\r\n        params <strong>=</strong> <strong>new</strong> <span style=\"color:rgb(0, 134, 179)\">Object</span>();\r\n\r\n    <strong>for</strong> ( <strong>var</strong> i <strong>=</strong> <span style=\"color:rgb(0, 153, 153)\">0</span> ; i <strong>&lt;</strong> metas.length ; i<strong>++</strong> ){\r\n      meta <strong>=</strong> metas[i];\r\n\r\n      <strong>switch</strong>(meta.name) {\r\n        <strong>case</strong> <span style=\"color:rgb(221, 17, 68)\">&quot;csrf-token&quot;</span><strong>:</strong>\r\n          csrf_token <strong>=</strong> meta.content;\r\n          <strong>break</strong>;\r\n        <strong>case</strong> <span style=\"color:rgb(221, 17, 68)\">&quot;csrf-param&quot;</span><strong>:</strong>\r\n          csrf_param <strong>=</strong> meta.content;\r\n          <strong>break</strong>;\r\n        <strong>default</strong><strong>:</strong>\r\n          <strong>continue</strong>;\r\n      }\r\n    }\r\n\r\n    <strong>if</strong> (csrf_param <strong>!==</strong> <strong>undefined</strong> <strong>&amp;&amp;</strong> csrf_token <strong>!==</strong> <strong>undefined</strong>) {\r\n      params[csrf_param] <strong>=</strong> csrf_token;\r\n    }\r\n\r\n    <strong>return</strong> params;\r\n  };\r\n\r\n  config.addQueryString <strong>=</strong> <strong>function</strong>( url, params ){\r\n    <strong>var</strong> queryString <strong>=</strong> [];\r\n\r\n    <strong>if</strong> ( <strong>!</strong>params ) {\r\n      <strong>return</strong> url;\r\n    } <strong>else</strong> {\r\n      <strong>for</strong> ( <strong>var</strong> i <strong>in</strong> params )\r\n        queryString.push( i <strong>+</strong> <span style=\"color:rgb(221, 17, 68)\">&quot;=&quot;</span> <strong>+</strong> <span style=\"color:rgb(0, 134, 179)\">encodeURIComponent</span>( params[ i ] ) );\r\n    }\r\n\r\n    <strong>return</strong> url <strong>+</strong> ( ( url.indexOf( <span style=\"color:rgb(221, 17, 68)\">&quot;?&quot;</span> ) <strong>!=</strong> <strong>-</strong><span style=\"color:rgb(0, 153, 153)\">1</span> ) <strong>?</strong> <span style=\"color:rgb(221, 17, 68)\">&quot;&amp;&quot;</span> <strong>:</strong> <span style=\"color:rgb(221, 17, 68)\">&quot;?&quot;</span> ) <strong>+</strong> queryString.join( <span style=\"color:rgb(221, 17, 68)\">&quot;&amp;&quot;</span> );\r\n  };\r\n\r\n  <em>// Integrate Rails CSRF token into file upload dialogs (link, image, attachment and flash)</em>\r\n  CKEDITOR.on( <span style=\"color:rgb(221, 17, 68)\">&#39;dialogDefinition&#39;</span>, <strong>function</strong>( ev ){\r\n    <em>// Take the dialog name and its definition from the event data.</em>\r\n    <strong>var</strong> dialogName <strong>=</strong> ev.data.name;\r\n    <strong>var</strong> dialogDefinition <strong>=</strong> ev.data.definition;\r\n    <strong>var</strong> content, upload;\r\n\r\n    <strong>if</strong> (CKEDITOR.tools.indexOf([<span style=\"color:rgb(221, 17, 68)\">&#39;link&#39;</span>, <span style=\"color:rgb(221, 17, 68)\">&#39;image&#39;</span>, <span style=\"color:rgb(221, 17, 68)\">&#39;attachment&#39;</span>, <span style=\"color:rgb(221, 17, 68)\">&#39;flash&#39;</span>], dialogName) <strong>&gt;</strong> <strong>-</strong><span style=\"color:rgb(0, 153, 153)\">1</span>) {\r\n      content <strong>=</strong> (dialogDefinition.getContents(<span style=\"color:rgb(221, 17, 68)\">&#39;Upload&#39;</span>) <strong>||</strong> dialogDefinition.getContents(<span style=\"color:rgb(221, 17, 68)\">&#39;upload&#39;</span>));\r\n      upload <strong>=</strong> (content <strong>==</strong> <strong>null</strong> <strong>?</strong> <strong>null</strong> <strong>:</strong> content.get(<span style=\"color:rgb(221, 17, 68)\">&#39;upload&#39;</span>));\r\n\r\n      <strong>if</strong> (upload <strong>&amp;&amp;</strong> upload.filebrowser <strong>&amp;&amp;</strong> upload.filebrowser[<span style=\"color:rgb(221, 17, 68)\">&#39;params&#39;</span>] <strong>===</strong> <strong>undefined</strong>) {\r\n        upload.filebrowser[<span style=\"color:rgb(221, 17, 68)\">&#39;params&#39;</span>] <strong>=</strong> config.filebrowserParams();\r\n        upload.action <strong>=</strong> config.addQueryString(upload.action, upload.filebrowser[<span style=\"color:rgb(221, 17, 68)\">&#39;params&#39;</span>]);\r\n      }\r\n    }\r\n  });\r\n};</pre>\r\n"], ["updated_at", Mon, 14 Oct 2013 00:28:24 UTC +00:00]]
+  [1m[35m (33.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/blogs/7
+Completed 302 Found in 112ms (ActiveRecord: 89.6ms)
+
+
+Started GET "/blogs/7" for 127.0.0.1 at 2013-10-14 02:28:24 +0200
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBlog Load (4.3ms)[0m  [1mSELECT "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT 1[0m  [["id", "7"]]
+  Rendered blogs/show.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 91ms (Views: 83.5ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-14 02:28:24 +0200
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-10-14 02:28:24 +0200
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-10-14 02:28:24 +0200
+
+
+Started GET "/assets/domov.css?body=1" for 127.0.0.1 at 2013-10-14 02:28:24 +0200
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:24 +0200
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:24 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:24 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:24 +0200
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:24 +0200
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:24 +0200
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:24 +0200
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:24 +0200
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:24 +0200
+
+
+Started GET "/assets/bs_logo.png" for 127.0.0.1 at 2013-10-14 02:28:25 +0200
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:26 +0200
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:26 +0200
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:26 +0200
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:26 +0200
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:26 +0200
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:26 +0200
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:26 +0200
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:26 +0200
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:26 +0200
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:26 +0200
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:26 +0200
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:26 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:26 +0200
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:26 +0200
+
+
+Started GET "/assets/domov.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:26 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-14 02:28:35 +0200
+Processing by DomovController#index as HTML
+  Rendered domov/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 72ms (Views: 70.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bs_logo.png" for 127.0.0.1 at 2013-10-14 02:28:35 +0200
+
+
+Started GET "/assets/me.jpg" for 127.0.0.1 at 2013-10-14 02:28:35 +0200
+
+
+Started GET "/assets/me-park.jpg" for 127.0.0.1 at 2013-10-14 02:28:35 +0200
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2013-10-14 02:28:35 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:36 +0200
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:36 +0200
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:36 +0200
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:36 +0200
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:36 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:36 +0200
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:36 +0200
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:36 +0200
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:36 +0200
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:36 +0200
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:36 +0200
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:36 +0200
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:36 +0200
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:36 +0200
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:36 +0200
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:36 +0200
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:36 +0200
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:36 +0200
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:36 +0200
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:36 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:36 +0200
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:36 +0200
+
+
+Started GET "/assets/domov.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:36 +0200
+
+
+Started GET "/Blogs" for 127.0.0.1 at 2013-10-14 02:28:38 +0200
+Processing by DomovController#blogs as HTML
+  [1m[35mBlog Load (9.0ms)[0m  SELECT "blogs".* FROM "blogs" ORDER BY "blogs"."id" DESC LIMIT 10
+  Rendered domov/blogs.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 119ms (Views: 107.1ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/assets/bs_logo.png" for 127.0.0.1 at 2013-10-14 02:28:38 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:38 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:38 +0200
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:38 +0200
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:38 +0200
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:38 +0200
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:38 +0200
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:38 +0200
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:38 +0200
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:38 +0200
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:38 +0200
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:38 +0200
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:38 +0200
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:38 +0200
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:38 +0200
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:38 +0200
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:39 +0200
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:39 +0200
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:39 +0200
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:39 +0200
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:39 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:39 +0200
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:39 +0200
+
+
+Started GET "/assets/domov.js?body=1" for 127.0.0.1 at 2013-10-14 02:28:39 +0200
+
+
+Started GET "/Blogs" for 127.0.0.1 at 2013-10-14 02:33:43 +0200
+Processing by DomovController#blogs as HTML
+  [1m[36mBlog Load (5.0ms)[0m  [1mSELECT "blogs".* FROM "blogs" ORDER BY "blogs"."id" DESC LIMIT 10[0m
+  Rendered domov/blogs.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 156ms (Views: 137.1ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-14 02:33:44 +0200
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-10-14 02:33:44 +0200
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-10-14 02:33:44 +0200
+
+
+Started GET "/assets/domov.css?body=1" for 127.0.0.1 at 2013-10-14 02:33:44 +0200
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:44 +0200
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:44 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:44 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:44 +0200
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:44 +0200
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:44 +0200
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:44 +0200
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:44 +0200
+
+
+Started GET "/assets/bs_logo.png" for 127.0.0.1 at 2013-10-14 02:33:44 +0200
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:45 +0200
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:45 +0200
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:45 +0200
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:46 +0200
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:46 +0200
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:46 +0200
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:46 +0200
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:46 +0200
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:46 +0200
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:46 +0200
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:46 +0200
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:46 +0200
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:46 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:46 +0200
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:47 +0200
+
+
+Started GET "/assets/domov.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:47 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:47 +0200
+
+
+Started GET "/blogs" for 127.0.0.1 at 2013-10-14 02:33:54 +0200
+Processing by BlogsController#index as HTML
+  [1m[35mBlog Load (4.9ms)[0m  SELECT "blogs".* FROM "blogs"
+  Rendered blogs/index.html.erb within layouts/application (76.6ms)
+Completed 200 OK in 148ms (Views: 141.3ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/bs_logo.png" for 127.0.0.1 at 2013-10-14 02:33:54 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:55 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:55 +0200
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:55 +0200
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:55 +0200
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:55 +0200
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:55 +0200
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:55 +0200
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:55 +0200
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:55 +0200
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:55 +0200
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:55 +0200
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:55 +0200
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:55 +0200
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:55 +0200
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:55 +0200
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:55 +0200
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:55 +0200
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:55 +0200
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:55 +0200
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:55 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:55 +0200
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:55 +0200
+
+
+Started GET "/assets/domov.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:55 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 02:33:55 +0200
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2013-10-14 02:34:02 +0200
+Processing by BlogsController#new as HTML
+  Rendered blogs/_form.html.erb (32.5ms)
+  Rendered blogs/new.html.erb within layouts/application (36.8ms)
+Completed 200 OK in 104ms (Views: 102.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bs_logo.png" for 127.0.0.1 at 2013-10-14 02:34:02 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 02:34:03 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 02:34:03 +0200
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2013-10-14 02:34:03 +0200
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-10-14 02:34:03 +0200
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-10-14 02:34:03 +0200
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-10-14 02:34:03 +0200
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-10-14 02:34:03 +0200
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 02:34:03 +0200
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-10-14 02:34:03 +0200
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-10-14 02:34:03 +0200
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-10-14 02:34:03 +0200
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-10-14 02:34:03 +0200
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-10-14 02:34:03 +0200
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-10-14 02:34:03 +0200
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-10-14 02:34:03 +0200
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-10-14 02:34:03 +0200
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-10-14 02:34:03 +0200
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-10-14 02:34:03 +0200
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-10-14 02:34:03 +0200
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-10-14 02:34:03 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-14 02:34:03 +0200
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-10-14 02:34:03 +0200
+
+
+Started GET "/assets/domov.js?body=1" for 127.0.0.1 at 2013-10-14 02:34:03 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 02:34:03 +0200
+
+
+Started GET "/assets/ckeditor/config.js?t=D6IE" for 127.0.0.1 at 2013-10-14 02:34:03 +0200
+
+
+Started GET "/assets/ckeditor/skins/moono/editor.css?t=D6IE" for 127.0.0.1 at 2013-10-14 02:34:04 +0200
+
+
+Started GET "/assets/ckeditor/lang/en.js?t=D6IE" for 127.0.0.1 at 2013-10-14 02:34:04 +0200
+
+
+Started GET "/assets/ckeditor/styles.js?t=D6IE" for 127.0.0.1 at 2013-10-14 02:34:04 +0200
+
+
+Started GET "/assets/ckeditor/contents.css" for 127.0.0.1 at 2013-10-14 02:34:05 +0200
