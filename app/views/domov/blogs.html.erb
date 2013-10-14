@@ -10,19 +10,21 @@
 </div>
 <!-- Blog view start //Blogs list -->
 <div class="row"> 
-	<div class="large-9 columns">
+	<div class="large-10 columns">
 		<div class="blogs">
 
 			
 	<% for blog in @blogs %>
 		<ul class="side-nav clanki">
 		<fieldset class="okvir">
-		<legend class="legend">"Our news about programming"</legend>		
+		<legend class="legend">"Show more"</legend>		
 			<li class="naslov"><%= link_to blog.naslov, blog %></li>
 			<li class="ustvarjen">Published on <%= blog.created_at.strftime('%b %d, %Y') %>. by Blaz</li>
 			<li class="divider"></li>
 			<br>
-			<li class="opis"><%= sanitize(blog.opis) %></li>	
+			<li class="opis"><%= sanitize(blog.opis) %></li>
+			<li class="divider"></li>	
+			<li class="show-more"><%= link_to "Show more...", blog %></li>
 		</ul>
 		</fieldset>
 	<% end %>
@@ -30,12 +32,16 @@
 	</div>
 
 
-	<div class="large-3 columns">
+	<div class="large-2 columns">
 		<div class="panel">
 			
 			
-			<ul class="side-nav">
+			<ul class="side-nav time-curent">
+			<li>Current Time In</li>
 			<li><%= l Time.now %></li>
+				<ul>
+					<li>London</li>
+				</ul>	
 			</ul>	
 				
 		</div>

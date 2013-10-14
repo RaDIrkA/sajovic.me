@@ -8,10 +8,11 @@
 			<li class="divider"></li>
 			<li><%= sanitize(@blog.opis) %></li>
 			<li class="divider"></li>
+			<li class="go_back">&#8629;<%= link_to 'Back', blogs_articles_path %></li>
 		</ul>
 
 	</div>
 </div>
 
 
-<%= link_to 'Back', blogs_articles_path %>
+

@@ -93,6 +93,7 @@
 			.legend {
 				font-size:7px;
 				letter-spacing:1px;
+
 			}
 		}
 		.okvir:hover {
@@ -100,13 +101,11 @@
 		}	
 			
 		.naslov {
+			text-shadow: -1px 3px 3px rgba(150, 150, 150, 1);
 			font-size:24px;
+			font-weight:bold;
 			font-family: 'Cantora One', sans-serif;	
 			letter-spacing:1px;
-			& :hover {
-			box-shadow:0px 3px 12px #E1D3D3;
-			}
-
 		}
 		.ustvarjen {
 			font-size:9px;
@@ -117,7 +116,15 @@
 			
 
 		}
+		.show-more {
+			float:right;color:black;letter-spacing:2px;font-size:14px;
+			& :hover {
+				color:#313131;
+			}
+		}
 	}
 }	
-
+.time-curent {
+	font-size: 10px;
+}
 @import url(http://fonts.googleapis.com/css?family=Cantora+One);
