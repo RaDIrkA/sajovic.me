@@ -22,7 +22,7 @@
 			<li class="ustvarjen">Published on <%= blog.created_at.strftime('%b %d, %Y') %>. by Blaz</li>
 			<li class="divider"></li>
 			<br>
-			<li class="opis"><%= blog.opis.html_safe %></li>
+			<li class="opis"><%= sanitize(blog.opis.html_safe) %></li>
 			<li class="divider"></li>	
 			<li class="show-more"><%= link_to "Show more...", blog %></li>
 		</ul>
