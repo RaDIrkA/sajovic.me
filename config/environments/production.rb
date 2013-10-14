@@ -66,7 +66,7 @@ SajovicMe::Application.configure do
   # Precompile additional assets
   config.assets.precompile += %w( .svg .eot .woff .ttf )
   config.assets.precompile += ['ckeditor/*']
-  config.assets.precompile += ['/*ckeditor.js/, /*config.js/, /*cs.js/, /*editor.css/, /*plugin.js/, /*en.js/, /*contents.css/, /*default.js/']
+  config.assets.precompile += ['/.*config\.js/, /.*cs.js/, /.*editor.css/, /.*plugin.js/, /.*en.js/, /.*contents.css/, /*.default.js/']
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
