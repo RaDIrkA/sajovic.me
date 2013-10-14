@@ -1,3 +1,4 @@
+<!-- Blog view start //Title -->
 <h6><%=h content_for(:title, "Blog Articles / Blaz Sajovic") %></h6>
 <div class="row">
 	<div class="large-12 columns">
@@ -7,20 +8,24 @@
 		</div>
 	</div>
 </div>
-
+<!-- Blog view start //Blogs list -->
 <div class="row"> 
 	<div class="large-9 columns">
 		<div class="blogs">
 
-	<% for blog in @blogs %>
-		<ul class="side-nav clanki">		
-			<li class="naslov"><%= link_to blog.naslov, blog %></li>
-			<li class="ustvarjen">Written on <%= blog.created_at.strftime('%b %d, %Y') %></li>
-			<li class="opis"><%= sanitize(blog.opis) %></li>
-			<li class="divider"></li>
-		</ul>
-	<% end %>	
 			
+	<% for blog in @blogs %>
+		<ul class="side-nav clanki">
+		<fieldset class="okvir">
+		<legend class="legend">"Our news about programming"</legend>		
+			<li class="naslov"><%= link_to blog.naslov, blog %></li>
+			<li class="ustvarjen">Published on <%= blog.created_at.strftime('%b %d, %Y') %>. by Blaz</li>
+			<li class="divider"></li>
+			<br>
+			<li class="opis"><%= sanitize(blog.opis) %></li>	
+		</ul>
+		</fieldset>
+	<% end %>
 		</div>
 	</div>
 
@@ -29,9 +34,9 @@
 		<div class="panel">
 			
 			
-				<ul class="side-nav">
-				<li><%= l Time.now %></li>
-				</ul>	
+			<ul class="side-nav">
+			<li><%= l Time.now %></li>
+			</ul>	
 				
 		</div>
 	</div>
