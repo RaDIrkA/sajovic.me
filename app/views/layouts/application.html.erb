@@ -21,7 +21,15 @@
 
     <%= csrf_meta_tags %>
   </head>
-
+    <script type="text/javascript">
+  $(document).ready(function() {
+    if ($("textarea").length > 0) {
+      var data = $("textarea");
+      $.each(data, function(i) {
+        CKEDITOR.replace(data[i].id);
+      });
+    }
+  });</script>
   <body>
 
   <nav class="top-bar">
@@ -165,15 +173,7 @@
   var CKEDITOR_BASEPATH = '/assets/ckeditor/';
   </script>
   
-  <script type="text/javascript">
-  $(document).ready(function() {
-    if ($("textarea").length > 0) {
-      var data = $("textarea");
-      $.each(data, function(i) {
-        CKEDITOR.replace(data[i].id);
-      });
-    }
-  });</script>
+
 
   <%= javascript_include_tag "application" %>
   </body>
