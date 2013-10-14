@@ -1,12 +1,12 @@
 <h6><%=h content_for(:title, @blog.naslov ) %></h6>
 <p id="notice"><%= notice %></p>  
-<%= l Time.now %>
+
 <div class="row">
 	<div class="large-10 columns blog">
 		<h4><%= @blog.naslov %></h4>
 			<ul class="side-nav">
 			<li class="divider"></li>
-			<li><%= @blog.opis.html_safe %></li>
+			<li><%= sanitize(@blog.opis) %></li>
 			<li class="divider"></li>
 		</ul>
 

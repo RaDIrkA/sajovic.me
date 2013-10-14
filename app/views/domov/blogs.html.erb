@@ -10,13 +10,13 @@
 
 <div class="row"> 
 	<div class="large-9 columns">
-		<div class="blogs flex">
+		<div class="blogs">
 
 	<% for blog in @blogs %>
 		<ul class="side-nav clanki">		
 			<li class="naslov"><%= link_to blog.naslov, blog %></li>
 			<li class="ustvarjen">Written on <%= blog.created_at.strftime('%b %d, %Y') %></li>
-			<li class="opis"><%= link_to blog.opis.html_safe %></li>
+			<li class="opis"><%= sanitize(blog.opis) %></li>
 			<li class="divider"></li>
 		</ul>
 	<% end %>	
