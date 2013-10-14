@@ -23,5 +23,7 @@ module SajovicMe
 
     config.assets.precompile += Ckeditor.assets
 
+    config.assets.enabled = false
+
   end
 end
