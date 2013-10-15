@@ -20,11 +20,13 @@
 			<ul class="no-bullet">	
 				<li class="current">Current Time:</li>
 					<ul>
-						<li>Hong Kong: <%= Time.now.in_time_zone("Hong Kong").time.strftime("%H:%M:%S") %></li>
 						<li>London: <%= Time.now.in_time_zone("London").time.strftime("%H:%M:%S")%></li>
+						<li>Ljubljana: <%= Time.now.in_time_zone("Ljubljana").time.strftime("%H:%M:%S") %></li>
+						<li>Hong Kong: <%= Time.now.in_time_zone("Hong Kong").time.strftime("%H:%M:%S") %></li>
+						
 						<li>Sydney: <%= Time.now.in_time_zone("Sydney").time.strftime("%H:%M:%S")%></li>
 						<li>New York: <%= Time.now.in_time_zone("Eastern Time (US & Canada)").time.strftime("%H:%M:%S") %></li>
-						<li>Ljubljana: <%= Time.now.strftime("%H:%M:%S") %></li>
+						
 					</ul>	
 			</ul>	
 				
