@@ -3,7 +3,10 @@
   They will automatically be included in application.css.
 
 */
-
+.testing {
+	max-width:600px;
+	width:100% !important;
+}
 .go_back {
 	float:right;color:black;letter-spacing:4px;font-size:14px;
 	
