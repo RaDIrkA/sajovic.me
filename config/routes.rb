@@ -2,7 +2,6 @@ SajovicMe::Application.routes.draw do
 
   mount Ckeditor::Engine => '/ckeditor'
   resources :blogs
-  
 
 
   get "Contact_Me" => "domov#contact", :as => "contact_us"

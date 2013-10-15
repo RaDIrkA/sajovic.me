@@ -54,6 +54,7 @@
 	box-shadow:0px 3px 12px #E1D3D3;
 	
 	img {
+		
 		border:3px solid #A8B2DC;
 		float:left;
 	}
@@ -102,7 +103,7 @@
 			
 		.naslov {
 			text-shadow: -1px 3px 3px rgba(150, 150, 150, 1);
-			font-size:24px;
+			font-size:32px;
 			font-weight:bold;
 			font-family: 'Cantora One', sans-serif;	
 			letter-spacing:1px;
@@ -125,6 +126,20 @@
 	}
 }	
 .time-curent {
-	font-size: 10px;
+	inline-list:none;
+	li {
+		text-align:left;
+		font-size: 10px;
+	}
+	h5 {
+		text-align: center;
+		font-size: 11px;
+	}
+	.current {
+		text-align:center;
+		font-size: 10px;
+		font-weight:bold;
+		
+	}
 }
 @import url(http://fonts.googleapis.com/css?family=Cantora+One);
