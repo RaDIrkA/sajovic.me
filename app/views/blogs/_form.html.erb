@@ -11,16 +11,28 @@
       </ul>
     </div>
   <% end %>
+<form>
+  <div class="row">
+    <div class="large-8 columns">
+      <%= f.label :naslov %><br>
+      <%= f.text_field :naslov, placeholder: "Naslov članka" %>
+    </div>
+  </div>
 
-  <div class="field">
-    <%= f.label :naslov %><br>
-    <%= f.text_field :naslov %>
+  
+        
+  <div class="row">
+    <div class="large-12 columns">    
+      <%= f.label :opis %><br>
+      <%= f.text_area :opis, placeholder: "Polje za vnos", class: "ckeditor" %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :opis %><br>
-    <%= f.text_area :opis, class: "ckeditor" %>
+  <hr>  
+  <div class="row">
+    <div class="large-12 columns">
+      <%= f.submit :Save!, class: "small button secondary" %>
+      <%= link_to 'Back to blogs', blogs_path, class: "small button secondary" %>
+    </div>   
   </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+<% end %>  
+</form>
