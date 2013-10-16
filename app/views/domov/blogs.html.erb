@@ -9,29 +9,7 @@
 	</div>
 
 
-	<div class="large-5 small-6 columns">
-		<div class="time-curent">
-			
-			
-			
-			<h5>Today is: 
-			<%= Time.now.strftime("%A %d.%m.%Y") %></h5>
-			<hr>
-			<ul class="no-bullet">	
-				<li class="current">Current Time:</li>
-					<ul>
-						<li>London: <%= Time.now.in_time_zone("London").time.strftime("%H:%M:%S")%></li>
-						<li>Ljubljana: <%= Time.now.in_time_zone("Ljubljana").time.strftime("%H:%M:%S") %></li>
-						<li>Hong Kong: <%= Time.now.in_time_zone("Hong Kong").time.strftime("%H:%M:%S") %></li>
-						
-						<li>Sydney: <%= Time.now.in_time_zone("Sydney").time.strftime("%H:%M:%S")%></li>
-						<li>New York: <%= Time.now.in_time_zone("Eastern Time (US & Canada)").time.strftime("%H:%M:%S") %></li>
-						
-					</ul>	
-			</ul>	
-				
-		</div>
-	</div>
+
 
 
 </div>
@@ -49,7 +27,7 @@
 			<li class="ustvarjen">Published on <%= blog.created_at.strftime('%b %d, %Y') %>, by Blaz.</li>
 			<li class="divider"></li>
 			<br>
-			<li class="opis"><%= truncate(blog.opis.to_s.html_safe, length: 200) %></li>
+			<li class="opis"><%= blog.opis.html_safe %></li>
 			<li class="divider"></li>	
 			<li class="show-more"><%= link_to "Show more...", blog %></li>
 		</ul>
