@@ -27,7 +27,8 @@
   <nav class="top-bar">
     <ul class="title-area admin-area">
       <% if user_signed_in? %>
-      <li class="name"><h1>Welcome Back <span class="ime">Blaž</span><span class="smejko"> :-) </span></h1>
+      <li class="divider"></li>
+      <li class="name"><span class="welcome">Welcome Back</span> <span class="ime">Blaž</span><span class="smejko"> :-) </span>
       <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>  
     </ul>
 
@@ -37,11 +38,9 @@
         <li><%= link_to "Urejaj me", admin_path %></li>
         <li class="divider"></li>
         <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+        <li class="divider"></li>
         <% else %>
         <% end %>
-
-
-        <li></li>
       </ul> 
     </section>
   
