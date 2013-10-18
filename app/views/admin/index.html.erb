@@ -1,4 +1,4 @@
-
+<h6><%=h content_for(:title, "Admin Panel BS" ) %></h6>
 <div class="row">
 <div class="large-12 columns">
 	<div class="section-container auto" data-section>
@@ -20,7 +20,7 @@
       					<div class="row">
       					<div class="large-12 columns">
       					<div class="glava"><h6><%= f.label :opis %></h6></div>
-      						<%= f.text_area :opis, placeholder: "Polje za vnos", class: "ckeditor" %>
+      						<%= f.text_area :opis, :cols => "30", :rows => "10", placeholder: "Polje za vnos", class: "ckeditor" %>
    						</div>
    						<hr>
    						<div class="row">
@@ -38,23 +38,23 @@
     		<p class="title" data-section-title><a href="#panel2">Lista blogov</a></p>
     		<div class="content" data-section-content>
 				<div class="glava">
-  					<h3>Lista vseh blogov</h3>
+  					<p>Lista vseh blogov</p>
 				</div>
 				<table>
   					<thead>
     					<tr>
-      						<th width="300">Naslov</th>
-      						<th width="600">Opis</th>
-      						<th width="10">Prikaži</th>
-      						<th width="10">Urejaj</th>
-      						<th width="10">Izbriši</th>
+      						<th>Naslov</th>
+      						<th>Opis</th>
+      						<th>Prikaži</th>
+      						<th>Urejaj</th>
+      						<th>Izbriši</th>
    						</tr>
   					</thead>
-  					<tbody>
+  					<tbody class="tabela">
     					<% @blogs.each do |blog| %>
       					<tr>
-        					<td><%= blog.naslov %></td>
-        					<td><%= sanitize(blog.opis) %></td>
+        					<td><%= truncate(strip_tags(blog.naslov), length: 25) %></td>
+        					<td><%= truncate(strip_tags(blog.opis), length: 100) %></td>
         					<td><%= link_to 'Show', blog, class: "button secondary small" %></td>
         					<td><%= link_to 'Edit', edit_blog_path(blog), class: "button secondary small" %></td>
         					<td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure? You will lost data!' }, class: "button secondary small" %></td>
@@ -67,7 +67,7 @@
     		</div>
   		</section>
 		<section>
-    		<p class="title" data-section-title><a href="#panel2">Lista blogov</a></p>
+    		<p class="title" data-section-title><a href="#panel2">Ostalo</a></p>
     		<div class="content" data-section-content>
 			
 			</div>

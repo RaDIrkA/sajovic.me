@@ -15,8 +15,8 @@
   <tbody>
     <% @blogs.each do |blog| %>
       <tr>
-        <td><%= blog.naslov %></td>
-        <td><%= sanitize(blog.opis) %></td>
+        <td><%= truncate(strip_tags(blog.naslov), length: 15) %></td>
+        <td><%= truncate(strip_tags(blog.opis), length: 40) %></td>
         <td><%= link_to 'Show', blog, class: "button secondary small" %></td>
         <td><%= link_to 'Edit', edit_blog_path(blog), class: "button secondary small" %></td>
         <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure? You will lost data!' }, class: "button secondary small" %></td>

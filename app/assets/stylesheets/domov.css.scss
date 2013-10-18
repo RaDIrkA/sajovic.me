@@ -117,6 +117,14 @@
 		}	
 		.opis {
 			
+			font-size:12px;
+			font-weight:bold;
+			color:black;
+background-image: linear-gradient(bottom, rgb(255,255,255) 23%, rgb(252,249,249) 62%, rgb(240,240,240) 97%); background-image: -o-linear-gradient(bottom, rgb(255,255,255) 23%, rgb(252,249,249) 62%, rgb(240,240,240) 97%); background-image: -moz-linear-gradient(bottom, rgb(255,255,255) 23%, rgb(252,249,249) 62%, rgb(240,240,240) 97%); background-image: -webkit-linear-gradient(bottom, rgb(255,255,255) 23%, rgb(252,249,249) 62%, rgb(240,240,240) 97%); background-image: -ms-linear-gradient(bottom, rgb(255,255,255) 23%, rgb(252,249,249) 62%, rgb(240,240,240) 97%);
+
+background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.23, rgb(255,255,255)), color-stop(0.62, rgb(252,249,249)), color-stop(0.97, rgb(240,240,240)) );
+
+
 			
 
 		}

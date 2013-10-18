@@ -25,10 +25,10 @@
   <body>
 
   <nav class="top-bar">
-    <ul class="title-area admin-area">
+    <ul class="title-area">
       <% if user_signed_in? %>
       <li class="divider"></li>
-      <li class="name"><span class="welcome">Welcome Back</span> <span class="ime">Blaž</span><span class="smejko"> :-) </span>
+      <li class="name"></li>
       <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>  
     </ul>
 
@@ -39,13 +39,20 @@
         <li class="divider"></li>
         <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
         <li class="divider"></li>
-        <% else %>
-        <% end %>
+        
       </ul> 
     </section>
-  
+   <% else %>    
+<% end %>
   </nav>
-
+<% if user_signed_in? %> 
+  <div class="row">
+    <div class="large-3 large-offset-1 columns  admin-area">
+      <span class="radius secondary label welcome">Welcome Back <span class="ime">Blaž</span><span class="smejko"> :-)</span></span>  
+  <% else %>
+<% end %>    
+    </div>
+  </div> 
 
   <div class="row">
 
