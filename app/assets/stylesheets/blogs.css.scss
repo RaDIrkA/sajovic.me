@@ -1,27 +1,36 @@
-/*
-  Place all the styles related to the matching controller here.
-  They will automatically be included in application.css.
 
-*/
 
-.go_back {
-	float:right;color:black;letter-spacing:4px;font-size:14px;
-	
-	& :hover {
-		color:#313131;
+
+.napaka {
+	list-style:none;
 	}
-}
-
 .blog {
 	box-shadow:0px 0px 2px #E1D3D3;
+	
+	h6 {
+		font-size:24px;color:#F9C207;text-align:center;
+	}
+	
+
+	p {
+		font-size: 10px;
+		font-family: 'Cantora One', sans-serif;
+	}	
+
+
 
 	li {
 		font-size: 14px;
 		font-family: sans-serif;
-	}
-	p {
-		font-size: 10px;
-		font-family: 'Cantora One', sans-serif;
-	}
+		}
+
+	
+	.go_back {
+		float:right;color:black;letter-spacing:4px;font-size:14px;
+			}
+	
+	.go_back:hover {
+			color:#F9C207;
+			}
 }
 

@@ -1,13 +1,14 @@
-<h1>Listing blogs</h1>
-
+<div class="glava">
+  <h3>Lista vseh blogov</h3>
+</div>
 <table>
   <thead>
     <tr>
-      <th>Naslov</th>
-      <th>Opis</th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th width="300">Naslov</th>
+      <th width="600">Opis</th>
+      <th width="10">Prikaži</th>
+      <th width="10">Urejaj</th>
+      <th width="10">Izbriši</th>
     </tr>
   </thead>
 
@@ -16,9 +17,9 @@
       <tr>
         <td><%= blog.naslov %></td>
         <td><%= sanitize(blog.opis) %></td>
-        <td><%= link_to 'Show', blog %></td>
-        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-        <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', blog, class: "button secondary small" %></td>
+        <td><%= link_to 'Edit', edit_blog_path(blog), class: "button secondary small" %></td>
+        <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure? You will lost data!' }, class: "button secondary small" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +27,4 @@
 
 <br>
 
-<%= link_to 'New Blog', new_blog_path %>
+<%= link_to 'New Blog', new_blog_path, class: "button secondary small" %>

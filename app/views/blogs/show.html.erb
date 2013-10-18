@@ -1,22 +1,24 @@
 <h6><%=h content_for(:title, @blog.naslov ) %></h6>
-<p id="notice"><%= notice %></p>  
+
 
 <div class="row">
 	<div class="large-12 columns blog">
 	<fieldset>
 	<legend><p>Published on <%= @blog.created_at.strftime('%b %d, %Y') %><br>
 	Article #<%=  @blog.id %></p></legend>
-		<h6 style="font-size:24px;color:#F9C207;text-align:center;"><strong><%= @blog.naslov %><strong></h6>
+		<h6><strong><%= @blog.naslov %></strong></h6>
 		<ul class="side-nav">
 			<li class="divider"></li>
 			<li><%= @blog.opis.html_safe %></li>
 			<li class="divider"></li>
-			<li class="go_back">&#8629;<%= link_to 'Back', blogs_articles_path %></li>
-		</ul>
+		</ul>	
+			<p class="go_back">&#8629;<%= link_to 'Back', admin_path, class: "go_back" %></p>
+		
 	
 	</fieldset>	
 	</div>
 </div>
+
 
 
 

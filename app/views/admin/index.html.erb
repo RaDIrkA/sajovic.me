@@ -1,0 +1,79 @@
+
+<div class="row">
+<div class="large-12 columns">
+	<div class="section-container auto" data-section>
+		<section class="active">
+			<p class="title" data-section-title><a href="#panel1">Dodaj nov blog</a></p>
+				<div class="content" data-section-content>
+					<div class="glava">
+						<p>Write new article, blog or news!</p>
+					</div>	
+					<%= form_for Blog.new do |f| %>
+
+					<form>
+						<div class="row">
+						<div class="large-6 columns">  		
+      					<div class="glava"><h6><%= f.label :naslov %></h6></div>
+      						<%= f.text_field :naslov, placeholder: "Naslov članka"  %>
+      					</div>
+      					</div>
+      					<div class="row">
+      					<div class="large-12 columns">
+      					<div class="glava"><h6><%= f.label :opis %></h6></div>
+      						<%= f.text_area :opis, placeholder: "Polje za vnos", class: "ckeditor" %>
+   						</div>
+   						<hr>
+   						<div class="row">
+   						<div class="large-10 large-offset-1 columns">  
+  							<%= f.submit :Save!, class: "small button secondary" %>
+      						<%= link_to 'Back to blogs', blogs_articles_path, class: "small button secondary" %>
+      					</div>
+      					</div>	
+    				</form>
+					<% end %>
+				</div>		  
+		</section>
+	
+	<section>
+    		<p class="title" data-section-title><a href="#panel2">Lista blogov</a></p>
+    		<div class="content" data-section-content>
+				<div class="glava">
+  					<h3>Lista vseh blogov</h3>
+				</div>
+				<table>
+  					<thead>
+    					<tr>
+      						<th width="300">Naslov</th>
+      						<th width="600">Opis</th>
+      						<th width="10">Prikaži</th>
+      						<th width="10">Urejaj</th>
+      						<th width="10">Izbriši</th>
+   						</tr>
+  					</thead>
+  					<tbody>
+    					<% @blogs.each do |blog| %>
+      					<tr>
+        					<td><%= blog.naslov %></td>
+        					<td><%= sanitize(blog.opis) %></td>
+        					<td><%= link_to 'Show', blog, class: "button secondary small" %></td>
+        					<td><%= link_to 'Edit', edit_blog_path(blog), class: "button secondary small" %></td>
+        					<td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure? You will lost data!' }, class: "button secondary small" %></td>
+     					</tr>
+    					<% end %>
+  					</tbody>
+				</table>
+				<br>
+				   			
+    		</div>
+  		</section>
+		<section>
+    		<p class="title" data-section-title><a href="#panel2">Lista blogov</a></p>
+    		<div class="content" data-section-content>
+			
+			</div>
+  		</section>
+
+	</div>	
+</div>	
+</div>
+

@@ -25,26 +25,29 @@
   <body>
 
   <nav class="top-bar">
-    <ul class="title-area">
-      <li class="name"></h1>
+    <ul class="title-area admin-area">
+      <% if user_signed_in? %>
+      <li class="name"><h1>Welcome Back <span class="ime">Blaž</span><span class="smejko"> :-) </span></h1>
       <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>  
     </ul>
 
     <section class="top-bar-section">
-      <ul class="right">
+      <ul class="left">
         <li class="divider"></li>
+        <li><%= link_to "Urejaj me", admin_path %></li>
+        <li class="divider"></li>
+        <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+        <% else %>
+        <% end %>
+
+
         <li></li>
       </ul> 
     </section>
   
   </nav>
 
-<% if user_signed_in? %>
-Pozdravljen BLAŽ :-)
 
-<%= link_to "Logout", destroy_user_session_path, method: :delete %>
-<% else %>
-<% end %>
   <div class="row">
 
 
@@ -106,9 +109,13 @@ Pozdravljen BLAŽ :-)
 
 
   <div class="large-8 columns">
-   <% flash.each do |name, msg| %>
-    <%= content_tag :div, msg, id: "flash_#{name}" %>
-    <% end %> 
+    <div class="row">
+      <div class="large-4 large-offset-3 columns msg">
+        <% flash.each do |name, msg| %>
+        <span class="label"><%= content_tag :div, msg, id: "flash_#{name}" %></span>
+        <% end %> 
+      </div>
+    </div>  
     <%= yield %>
   </div>
 
@@ -148,10 +155,10 @@ Pozdravljen BLAŽ :-)
       <div class="footer-nav">
         <ul class="inline-list footer-links">
           <li><%= link_to_unless_current "About me", domov_path %></li>
-          <li><%= link_to_unless_current "Blogs", blogs_path %></li>
+          <li><%= link_to_unless_current "Blogs", blogs_articles_path %></li>
           <li><%= link_to_unless_current "Our Projects", our_projects_path %></li>
           <li><%= link_to_unless_current "Contact Me", contact_us_path %></li>
-          <li><%= link_to_unless_current "Admin", admin_path %></li>
+          <li><%= link_to_unless_current "Admin", log_in_path %></li>
         </ul>
         <p>Copyright &copy; 2013 Blaz Sajovic, All rights reserved.<br>
         Innovative Web & Computers Services &raquo; <%= link_to "Spletko.eu", "http://spletko.eu/", :target => "_blank" %></p>

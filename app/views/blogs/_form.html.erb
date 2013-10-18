@@ -1,38 +1,37 @@
-
 <%= form_for(@blog) do |f| %>
   <% if @blog.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@blog.errors.count, "error") %> prohibited this blog from being saved:</h2>
-
       <ul>
       <% @blog.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
+        <span class="round alert label"><li class="napaka"><%= msg %></li></span>
       <% end %>
       </ul>
     </div>
-  <% end %>
+  
 <form>
   <div class="row">
     <div class="large-8 columns">
-      <%= f.label :naslov %><br>
+      <div class="glava"><h6><%= f.label :naslov %></h6></div>
       <%= f.text_field :naslov, placeholder: "Naslov članka" %>
     </div>
   </div>
-
+<% end %>
   
         
   <div class="row">
-    <div class="large-12 columns">    
-      <%= f.label :opis %><br>
-      <%= f.text_area :opis, placeholder: "Polje za vnos", class: "ckeditor" %>
-    </div>
-  </div>
-  <hr>  
-  <div class="row">
     <div class="large-12 columns">
-      <%= f.submit :Save!, class: "small button secondary" %>
-      <%= link_to 'Back to blogs', blogs_path, class: "small button secondary" %>
-    </div>   
-  </div>
+      <div class="glava">    
+        <h6><%= f.label :opis %></h6></div>
+            <%= f.text_area :opis, placeholder: "Polje za vnos", class: "ckeditor" %>
+      </div>
+    </div>
+    <hr>  
+    <div class="row">
+      <div class="large-12 columns">
+        <%= f.submit :Save!, class: "small button secondary" %>
+        <%= link_to 'Admin panel', admin_path, class: "small button secondary" %>
+        <%= link_to 'Back to blogs', blogs_path, class: "small button secondary" %>
+      </div>   
+    </div>
 <% end %>  
 </form>

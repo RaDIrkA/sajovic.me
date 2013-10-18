@@ -8,11 +8,14 @@ class BlogsController < ApplicationController
     @blogs = Blog.all.reverse
   end
 
+
+
   # GET /blogs/1
   # GET /blogs/1.json
   def show
     @blogs = Blog.all
   end
+
 
   # GET /blogs/new
   def new
@@ -58,7 +61,7 @@ class BlogsController < ApplicationController
   def destroy
     @blog.destroy
     respond_to do |format|
-      format.html { redirect_to blogs_url }
+      format.html { redirect_to admin_url }
       format.json { head :no_content }
     end
   end
