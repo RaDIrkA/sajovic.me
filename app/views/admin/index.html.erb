@@ -12,17 +12,27 @@
 					<div class="row">	
 					<%= form_for Blog.new do |f| %>
 
+
+        <% flash.each do |name, msg| %>
+        <span class="label"><%= content_tag :div, msg, id: "flash_#{name}" %></span>
+        <% end %>    
+
+
+
+
+
+
 					<form>
 						
 						<div class="large-6 columns">  		
       					<div class="glava"><h6><%= f.label :naslov %></h6></div>
-      						<%= f.text_field :naslov, placeholder: "Naslov članka"  %>
+      						<%= f.text_field :naslov, placeholder: "Naslov", :required => true  %>
       					</div>
       					
       				
       					<div class="large-12 columns">
       					<div class="glava"><h6><%= f.label :opis %></h6></div>
-      						<%= f.text_area :opis, :cols => "30", :rows => "10", placeholder: "Polje za vnos", class: "ckeditor" %>
+      						<%= f.text_area :opis, :cols => "30", :rows => "10", placeholder: "Polje za vnos", class: "ckeditor", :required => true %>
    						
    						<hr>
    						

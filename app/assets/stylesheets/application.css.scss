@@ -13,8 +13,75 @@
  *= require_tree .
  */
 
+/* Style for Social icons on right side */
 
-.fix {position:fixed;border:1px solid red;z-index:9999;}
+
+body .fix {position:fixed !important;position:absolute;top:52px;float:right;}
+
+.social {
+		background:whitesmoke;
+		width:110px;
+		border-radius:10px;
+		margin:0;
+		margin-right:10px;
+		li {
+			list-style:none;padding-left:32px;height:27px;line-height:27px;padding-top:4px;
+			p {
+				font-size:12px;
+				letter-spacing:1px;
+				margin:0;
+				&:hover {
+					font-size:11px;
+					border-bottom:1px dotted #FAC207;
+					width:70px;
+					letter-spacing:2px;
+				}
+			}	
+		}
+		h1 {
+			font-size:13px;
+			text-align:center;
+			font-weight:bold;
+			letter-spacing:1px;
+			font-family: 'Cantora One';
+			color: #FAC207;
+
+		}
+			.twitter {
+				background:url("/assets/social/twitter.png") no-repeat;
+				&:hover {
+					background-position:0px -26px;
+				}
+			}
+			.facebook {
+				background:url("/assets/social/fb.png") no-repeat;
+				-webkit-transition: all 0.3 ease-in-out;
+				&:hover {
+					background-position:0px -26px;
+				}
+			}
+			.skype {
+				background:url("/assets/social/skype.png") no-repeat;
+				&:hover {
+					background-position:0px -26px;
+				}
+			}
+			.github {
+				background:url("/assets/social/github.png") no-repeat;
+				&:hover {
+					background-position:0px -26px;
+				}
+			}
+			.linkedin {
+				background:url("/assets/social/linkedin.png") no-repeat;
+				&:hover {
+					background-position:0px -26px;
+				}
+			}	
+
+}
+
+
 
 
 
@@ -24,16 +91,17 @@
 		font-color:white;
 	}
 	.smejko {
-		color:white;
+		color:red;
 	}
 	.ime {
 		Color:blue;
 	}
 }
-.msg {color:blue;
-letter-spacing:2px;}
-.menu {
-	
+.msg {
+color:blue;
+letter-spacing:2px;
+}
+.menu {	
 	width:200px;
 	font-size:18px;
 	letter-spacing:2px;
@@ -42,10 +110,14 @@ letter-spacing:2px;}
 			text-align:right;
 			color: #000013;
 			font-family: family;
-
-
 				& :hover {
 					color:#313131;
+					text-shadow: -2px 1px 5px #000000;
+					filter: dropshadow(color=#000000, offx=-2, offy=1);
+					-webkit-transition: all 0.6s ease-in-out;
+					-moz-transition: all 0.6s ease-in-out;
+					-o-transition: all 0.6s ease-in-out;
+					transition: all 0.6s ease-in-out;
 				}
 		}
 }	
@@ -89,6 +161,10 @@ letter-spacing:2px;}
 			font-size:10px;
 				& :hover {
 					color:#313131;
+					-webkit-transition: all 0.6s ease-in-out;
+					-moz-transition: all 0.6s ease-in-out;
+					-o-transition: all 0.6s ease-in-out;
+					transition: all 0.6s ease-in-out;
 				}
 			}
 }

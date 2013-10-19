@@ -106,10 +106,18 @@
 		}	
 			
 		.naslov {
-			
+			color:black;
 			font-size:22px;
 			font-weight:bold;
 			font-family: 'Cantora One', sans-serif;	
+			letter-spacing:1px;
+			-webkit-transition: all 0.6s ease-in-out;
+			-moz-transition: all 0.6s ease-in-out;
+			-o-transition: all 0.6s ease-in-out;
+			transition: all 0.6s ease-in-out;
+			& :hover {
+				color:#FBCC32;
+			}
 			
 		}
 		.ustvarjen {
@@ -129,7 +137,15 @@
 			background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.23, rgb(255,255,255)), color-stop(0.62, rgb(252,249,249)), color-stop(0.97, rgb(240,240,240)) );
 		}	
 		.show-more {
-			color:black;letter-spacing:4px;font-size:14px;float:right;font-family: 'Cantora One', sans-serif;
+			color:black;
+			letter-spacing:4px;
+			font-size:12px;
+			float:right;
+			font-family: 'Cantora One', sans-serif;
+			-webkit-transition: all 0.6s ease-in-out;
+			-moz-transition: all 0.6s ease-in-out;
+			-o-transition: all 0.6s ease-in-out;
+			transition: all 0.6s ease-in-out;
 		
 			& :hover {
 				color:#F9C207;

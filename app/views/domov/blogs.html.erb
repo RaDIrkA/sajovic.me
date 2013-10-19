@@ -23,7 +23,7 @@
 		<ul class="side-nav clanki">
 		<fieldset class="okvir">
 		<legend class="legend">Article #<%=  blog.id %></legend>		
-			<li class="naslov"><%= blog.naslov %></li>
+			<li class="naslov"><%= link_to blog.naslov, blog, class: "naslov" %></li>
 			<li class="ustvarjen">Published on <%= blog.created_at.strftime('%b %d, %Y') %>, by Blaz.</li>
 			<li class="divider"></li>
 			<br>

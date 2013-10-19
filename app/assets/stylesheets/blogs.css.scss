@@ -26,11 +26,18 @@
 
 	
 	.go_back {
-		float:right;color:black;letter-spacing:4px;font-size:14px;
-			}
-	
-	.go_back:hover {
+		float:right;
+		color:black;
+		letter-spacing:4px;
+		font-size:14px;
+		
+		& :hover {
 			color:#F9C207;
-			}
+			-webkit-transition: all 0.6s ease-in-out;
+			-moz-transition: all 0.6s ease-in-out;
+			-o-transition: all 0.6s ease-in-out;
+			transition: all 0.6s ease-in-out;	
+		}	
+	}
 }
 
