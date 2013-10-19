@@ -5,33 +5,35 @@
 		<section class="active">
 			<p class="title" data-section-title><a href="#panel1">Dodaj nov blog</a></p>
 				<div class="content" data-section-content>
+				
 					<div class="glava">
 						<p>Write new article, blog or news!</p>
-					</div>	
+					</div>
+					<div class="row">	
 					<%= form_for Blog.new do |f| %>
 
 					<form>
-						<div class="row">
+						
 						<div class="large-6 columns">  		
       					<div class="glava"><h6><%= f.label :naslov %></h6></div>
       						<%= f.text_field :naslov, placeholder: "Naslov članka"  %>
       					</div>
-      					</div>
-      					<div class="row">
+      					
+      				
       					<div class="large-12 columns">
       					<div class="glava"><h6><%= f.label :opis %></h6></div>
       						<%= f.text_area :opis, :cols => "30", :rows => "10", placeholder: "Polje za vnos", class: "ckeditor" %>
-   						</div>
+   						
    						<hr>
-   						<div class="row">
+   						
    						<div class="large-10 large-offset-1 columns">  
   							<%= f.submit :Save!, class: "small button secondary" %>
       						<%= link_to 'Back to blogs', blogs_articles_path, class: "small button secondary" %>
       					</div>
-      					</div>	
+      					
     				</form>
 					<% end %>
-				</div>		  
+				</div>	</div>	  
 		</section>
 	
 	<section>
