@@ -40,3 +40,15 @@ $(function(){ $(document).foundation(); });
 
 	showNextQuote();
 })();
+
+
+$('.zapri').click(function () {
+	$(this).closest('.social').show(".prikazi").
+		delay().fadeOut(500)
+});
+
+
+$('.prikazi').click(function () {
+	$(this).fadeIn('.social').
+		delay().fadeIn(500)
+});

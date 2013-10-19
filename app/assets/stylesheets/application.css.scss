@@ -51,31 +51,36 @@ body .fix {position:fixed !important;position:absolute;top:52px;float:right;}
 				background:url("/assets/social/twitter.png") no-repeat;
 				&:hover {
 					background-position:0px -26px;
+					transition:all 0.2s ease-in-out;
 				}
 			}
 			.facebook {
 				background:url("/assets/social/fb.png") no-repeat;
-				-webkit-transition: all 0.3 ease-in-out;
+
 				&:hover {
 					background-position:0px -26px;
+					transition:all 0.2s ease-in-out;
 				}
 			}
 			.skype {
 				background:url("/assets/social/skype.png") no-repeat;
 				&:hover {
 					background-position:0px -26px;
+					transition:all 0.2s ease-in-out;
 				}
 			}
 			.github {
 				background:url("/assets/social/github.png") no-repeat;
 				&:hover {
 					background-position:0px -26px;
+					transition:all 0.2s ease-in-out;
 				}
 			}
 			.linkedin {
 				background:url("/assets/social/linkedin.png") no-repeat;
 				&:hover {
 					background-position:0px -26px;
+					transition:all 0.2s ease-in-out;
 				}
 			}	
 
