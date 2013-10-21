@@ -1,0 +1,31 @@
+
+<%= form_for(@work) do |f| %>
+  <% if @work.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@work.errors.count, "error") %> prohibited this project from being saved:</h2>
+
+      <ul>
+      <% @work.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %> 
+<form>
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="glava">    
+        <h6><%= f.label :work %></h6></div>
+            <%= f.text_area :content, class: "ckeditor", :required => true %>
+      </div>
+    </div>
+    <hr>  
+    <div class="row">
+      <div class="large-12 columns">
+        <%= f.submit :Save!, class: "small button secondary" %>
+        <%= link_to 'Admin panel', admin_path, class: "small button secondary" %>
+      </div>   
+    </div>
+<% end %>  
+</form>
+

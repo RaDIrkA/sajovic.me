@@ -1031,16 +1031,16 @@ $custom-dropdown-font-color-selected: #fff;
 
 // $section-title-color: #333;
 // $section-title-color-active: #333;
-// $section-title-bg: #efefef;
+$section-title-bg: #fff;
 // $section-title-bg-active: darken($section-title-bg, $section-function-factor);
 // $section-title-bg-active-tabs: #fff;
-// $section-title-bg-hover: darken($section-title-bg, $section-function-factor / 2);
+$section-title-bg-hover: none;
 
 // Want to control border size, here ya go!
 
 // $section-border-size: 1px;
 // $section-border-style: solid;
-// $section-border-color: #ccc;
+$section-border-color: #fff;
 
 // Font controls
 

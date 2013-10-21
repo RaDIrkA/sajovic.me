@@ -7,19 +7,19 @@
       <% end %>
       </ul>
     </div>
-  
+  <% end %>
 <form>
   <div class="row">
     <div class="large-8 columns">
-      <div class="glava"><h6><%= f.label :naslov %></h6></div>
-      <%= f.text_field :naslov, placeholder: "Naslov članka", :required => true %>
+      <div class="glava"><h6><%= f.label :naslov, placeholder: "Naslov", :required => true %></h6></div>
+      <%= f.text_field :naslov %>
     </div>
   </div>
-<% end %>
-  
+
+  <br>
         
   <div class="row">
-    <div class="large-10 columns">
+    <div class="large-12 columns">
       <div class="glava">    
         <h6><%= f.label :opis %></h6></div>
             <%= f.text_area :opis, placeholder: "Polje za vnos", class: "ckeditor", :required => true %>

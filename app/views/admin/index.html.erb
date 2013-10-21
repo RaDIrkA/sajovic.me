@@ -1,58 +1,47 @@
-<h6><%=h content_for(:title, "Admin Panel BS" ) %></h6>
+<h6><%=h content_for(:title, "Admin Panel BS " ) %></h6>
 <div class="row">
-<div class="large-12 columns">
-	<div class="section-container auto" data-section>
-		<section class="active">
-			<p class="title" data-section-title><a href="#panel1">Dodaj nov blog</a></p>
-				<div class="content" data-section-content>
-				
-					<div class="glava">
-						<p>Write new article, blog or news!</p>
-					</div>
+  <div class="large-12 columns">
+	  <div class="section-container auto" data-section>
+		  <section class="active">
+			  <p class="title" data-section-title><%= link_to "Add Blog", "#panel1" %></p>
+			  <div class="content" data-section-content>
+          <h6><%=h content_for( "- Reference List" ) %></h6>
+				  <div class="glava">
+				    <p>Write new article, blog or news!</p>
+				  </div>
 					<div class="row">	
-					<%= form_for Blog.new do |f| %>
-
-
-        <% flash.each do |name, msg| %>
-        <span class="label"><%= content_tag :div, msg, id: "flash_#{name}" %></span>
-        <% end %>    
-
-
-
-
-
-
-					<form>
-						
-						<div class="large-6 columns">  		
-      					<div class="glava"><h6><%= f.label :naslov %></h6></div>
+					  <%= form_for Blog.new do |f| %>
+            <% flash.each do |name, msg| %>
+            <span class="label"><%= content_tag :div, msg, id: "flash_#{name}" %></span>
+            <% end %>    
+					  <form>
+						  <div class="large-6 columns">  		
+      					<div class="glava"><h6><%= f.label :naslov %></h6>
+                </div>
       						<%= f.text_field :naslov, placeholder: "Naslov", :required => true  %>
-      					</div>
-      					
-      				
-      					<div class="large-12 columns">
-      					<div class="glava"><h6><%= f.label :opis %></h6></div>
+      				</div>
+      				<div class="large-12 columns">
+      				  <div class="glava"><h6><%= f.label :opis %></h6>
+                </div>
       						<%= f.text_area :opis, :cols => "30", :rows => "10", placeholder: "Polje za vnos", class: "ckeditor", :required => true %>
-   						
-   						<hr>
-   						
-   						<div class="large-10 large-offset-1 columns">  
-  							<%= f.submit :Save!, class: "small button secondary" %>
-      						<%= link_to 'Back to blogs', blogs_articles_path, class: "small button secondary" %>
-      					</div>
-      					
-    				</form>
+   						    <hr>
+     						  <div class="large-10 large-offset-1 columns">  
+    							  <%= f.submit :Save!, class: "small button secondary" %>
+      						  <%= link_to 'Back to blogs', blogs_articles_path, class: "small button secondary" %>
+      					  </div>
+                </div>
+              </div>    					
+    				</form>  
 					<% end %>
-				</div>	</div>	  
-		</section>
-	
-	<section>
-    		<p class="title" data-section-title><a href="#panel2">Lista blogov</a></p>
+        </div>	  
+		  </section>
+	    <section>
+    		<p class="title" data-section-title><a href="#panel2">Blogs list</a></p>
     		<div class="content" data-section-content>
-				<div class="glava">
+				  <div class="glava">
   					<p>Lista vseh blogov</p>
-				</div>
-				<table>
+				  </div>
+				  <table>
   					<thead>
     					<tr>
       						<th>Naslov</th>
@@ -73,19 +62,121 @@
      					</tr>
     					<% end %>
   					</tbody>
-				</table>
-				<br>
-				   			
-    		</div>
+				  </table>
+				  <br>
+				</div>
   		</section>
-		<section>
-    		<p class="title" data-section-title><a href="#panel2">Ostalo</a></p>
+		  <section>
+    		<p class="title" data-section-title><a href="#panel2">Add reference</a></p>
     		<div class="content" data-section-content>
-			
-			</div>
-  		</section>
-
-	</div>	
-</div>	
+          <div class="glava">
+            <p>Add new big project or reference!</p>
+          </div>
+          <div class="row"> 
+            <%= form_for Project.new do |f| %>
+            <% flash.each do |name, msg| %>
+            <span class="label"><%= content_tag :div, msg, id: "flash_#{name}" %></span>
+            <% end %>    
+          <form>
+            <div class="large-12 columns">
+              <div class="glava"><h6><%= f.label :Reference %></h6>
+              </div>
+                <%= f.text_area :content, :cols => "30", :rows => "10", class: "ckeditor", :required => true %>    
+                <hr>
+              <div class="large-10 large-offset-1 columns">  
+                <%= f.submit :Save!, class: "small button secondary" %>
+                <%= link_to 'Back to blogs', projects_path, class: "small button secondary" %>
+              </div>
+            </div>
+          </form>
+                <% end %>
+        </div>  
+      </section>
+      <section>
+        <p class="title" data-section-title><a href="#panel2">Reference list</a></p>
+        <div class="content" data-section-content>
+        <div class="glava">
+            <p>Lista vseh referenc</p>
+        </div>
+        <table>
+            <thead>
+              <tr>
+                  <th>Referenca</th>
+                  <th>Prikaži</th>
+                  <th>Urejaj</th>
+                  <th>Izbriši</th>
+              </tr>
+            </thead>
+            <tbody class="tabela">
+              <% @projects.each do |project| %>
+                <tr>
+                  <td><%= truncate(strip_tags(project.content), length: 105) %></td>     
+                  <td><%= link_to 'Show', project, class: "button secondary small" %></td>
+                  <td><%= link_to 'Edit', edit_project_path(project), class: "button secondary small" %></td>
+                  <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure? You will lost data!' }, class: "button secondary small" %></td>
+                </tr>
+                <% end %>
+            </tbody>
+        </table>
+        <br>        
+        </div>
+      </section>
+      <section>
+        <p class="title" data-section-title><a href="#panel2">Add Work</a></p>
+        <div class="content" data-section-content>
+          <div class="glava">
+            <p>Write new work projects etc..!</p>
+          </div>
+          <div class="row"> 
+            <%= form_for Work.new do |f| %>
+            <% flash.each do |name, msg| %>
+            <span class="label"><%= content_tag :div, msg, id: "flash_#{name}" %></span>
+            <% end %>    
+            <form>
+              <div class="large-12 columns">
+                <div class="glava"><h6><%= f.label :Work %></h6>
+                </div>
+                  <%= f.text_area :content, :cols => "30", :rows => "10", class: "ckeditor", :required => true %>    
+                <hr>
+                  <div class="large-10 large-offset-1 columns">  
+                    <%= f.submit :Save!, class: "small button secondary" %>
+                    <%= link_to 'Back to blogs', works_path, class: "small button secondary" %>
+                  </div>
+                </div>
+            </form>
+            <% end %>
+          </div>  
+        </section>
+        <section>
+          <p class="title" data-section-title><a href="#panel2">My Work list</a></p>
+            <div class="content" data-section-content>
+              <div class="glava">
+                <p>Lista vseh projektov in del.</p>
+              </div>
+              <table>
+                <thead>
+                <tr>
+                  <th>Work / Project</th>
+                  <th>Prikaži</th>
+                  <th>Urejaj</th>
+                  <th>Izbriši</th>
+                </tr>
+              </thead>
+              <tbody class="tabela">
+                <% @works.each do |work| %>
+                <tr>
+                  <td><%= truncate(strip_tags(work.content), length: 105) %></td>  
+                  <td><%= link_to 'Show', work, class: "button secondary small" %></td>
+                  <td><%= link_to 'Edit', edit_work_path(work), class: "button secondary small" %></td>
+                  <td><%= link_to 'Destroy', work, method: :delete, data: { confirm: 'Are you sure? You will lost data!' }, class: "button secondary small" %></td>
+                </tr>
+                <% end %>
+              </tbody>
+            </table>
+            <br>     
+        </div>
+      </section>
+	  </div>	
+  </div>	
 </div>
 

@@ -1,12 +1,19 @@
 SajovicMe::Application.routes.draw do
 
 
+
+
+
+  resources :works
+
+  resources :projects
+
   get "admin" => "admin#index", as: "admin"
   
 
   devise_for :users
 
-  devise_scope :user do get "log_in" => "devise/sessions#new"
+  devise_scope :user do get "login" => "devise/sessions#new"
   end
 
 
@@ -16,9 +23,9 @@ SajovicMe::Application.routes.draw do
   resources :blogs
 
 
-  get "Contact_Me" => "domov#contact", :as => "contact_us"
-  get "Projects" => "domov#projects", :as => "our_projects"
-  get "Blogs" => "domov#blogs", :as => "blogs_articles"
+  get "contact" => "domov#contact", :as => "contact_us"
+  get "project" => "domov#projects", :as => "our_projects"
+  get "blog" => "domov#blogs", :as => "blogs_articles"
   get "domov/index", as: "about"
   root "domov#index", as: "domov"
   # The priority is based upon order of creation: first created -> highest priority.

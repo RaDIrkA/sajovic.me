@@ -14,7 +14,7 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   	<title><%= content_for?(:title) ? yield(:title) : "Blaz Sajovic / Ruby On Rails Developer" %></title>
-
+    <link rel="shortcut icon" href="/assets/bs_logo.png" />
   	<%= stylesheet_link_tag    "application", :media => "all" %>
   	<%= javascript_include_tag "vendor/custom.modernizr" %>
 
@@ -35,7 +35,7 @@
     <section class="top-bar-section">
       <ul class="left">
         <li class="divider"></li>
-        <li><%= link_to "Manage", admin_path %></li>
+        <li><%= link_to "Dashboard", admin_path %></li>
         <li class="divider"></li>
         <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
         <li class="divider"></li>
@@ -126,20 +126,20 @@
   </div>
 
   
-  <div class="large-1 small-5 columns">
+  <div class="large-1 small-3 columns">
     <div class="fix">
     
       <ul class="social">
-        <h1> Follow me</h1>
+        <h1> Connect</h1>
         <li class="twitter"><p><%= link_to "Twitter", "https://twitter.com/RaDIrkA", :target => "_blank" %></p></li>
         <li class="facebook"><p><%= link_to "Facebook", "https://www.facebook.com/blaz.sajovic.3?ref=tn_tnmn", :target => "_blank" %></p></li>
         <li class="skype"><p><%= link_to "Skype", "skype://radirka8", :target => "_blank" %></p></li>
         <li class="github"><p><%= link_to "GitHub", "https://github.com/RaDIrkA", :target => "_blank" %></p></li>
         <li class="linkedin"><p><%= link_to "LinkedIn", "http://www.linkedin.com/pub/bla%C5%BE-sajovic/80/b39/25", :target => "_blank" %></p></li>
-        <p class="zapri">CLOSE</p>
+        <p class="zapri" title="Close">&#967;</p>
 
       </ul>
-      <p class="prikazi">odpri</p>
+      
      </div> 
  
   </div>
@@ -163,7 +163,7 @@
           <li><%= link_to_unless_current "Blogs", blogs_articles_path %></li>
           <li><%= link_to_unless_current "My Projects", our_projects_path %></li>
           <li><%= link_to_unless_current "Contact Me", contact_us_path %></li>
-          <li><%= link_to_unless_current "Admin", log_in_path %></li>
+          <li><%= link_to_unless_current "Admin", login_path %></li>
         </ul>
         <p>Copyright &copy; 2013 Blaz Sajovic, All rights reserved.<br>
         Innovative Web & Computers Services &raquo; <%= link_to "Spletko.eu", "http://spletko.eu/", :target => "_blank" %></p>

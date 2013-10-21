@@ -1,39 +1,47 @@
 <h6><%=h content_for(:title, "All My Work And Projects / Blaz Sajovic") %></h6>
+
+
 <div class="row">
-
-<div class="large-10 columns">
-	<div class="section-container auto" data-section>
-		<section class="active">
-			<p class="title" data-section-title><a href="#panel1">section 1</a></p>
-			<div class="content" data-section-content>
-				<p>content secion 1</p>
-			</div>
-		</section>
+	<div class="large-12 columns">
+		<div class="section-container auto" data-section>
+			<section class="active">
+				<p class="title" data-section-title><a href="#panel1">Projects</a></p>
+				<div class="content" data-section-content>
+					ilij
+				</div>
 			
-		<section>
-    		<p class="title" data-section-title><a href="#panel2">Section 2</a></p>
-    		<div class="content" data-section-content>
-      			<p><%= link_to 'New Blog', new_blog_path %></p>
-    		</div>
-  		</section>
-	</div>	
-</div>
-
-
-
-		
+			</section>
 			
-<a href="#" data-reveal-id="news">KLIKNI K</a>		
+			<section>
+    			<p class="title" data-section-title><a href="#panel2">References</a></p>
+    			<div class="content" data-section-content>
+					<% for project in @projects %>
+					<ul class="work-list">
+						<li><%= project.content.html_safe %></li>
+					</ul>
+					<hr/>
 
 
-</div>
+					<% end %> 
+				</div>
+    		
+  			</section>
 
-
-
-
-
-		<div id="news" class="reveal-modal">
-			<p></p>
-			<a href="#" class="button">Klikni za novice</a>
-			<a class="close-reveal-modal">&times;</a>
+			<section>
+    			<p class="title" data-section-title><a href="#panel2">Work</a></p>
+    			<div class="content" data-section-content>
+      				<% for work in @works %>
+      				<ul class="work-list">
+      					<li><%= work.content.html_safe %></li>
+      				</ul>
+  					<% end %>	
+    			</div>
+  			</section>
 		</div>
+	</div>
+</div>
+
+
+
+
+

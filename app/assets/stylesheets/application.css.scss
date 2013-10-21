@@ -16,9 +16,10 @@
 /* Style for Social icons on right side */
 
 
-body .fix {position:fixed !important;position:absolute;top:52px;float:right;}
+body .fix {position:fixed !important;position:absolute;top:180px;float:right;right:-10px;}
 
 .social {
+		z-index: 2;
 		background:whitesmoke;
 		width:110px;
 		border-radius:10px;
@@ -82,6 +83,14 @@ body .fix {position:fixed !important;position:absolute;top:52px;float:right;}
 					background-position:0px -26px;
 					transition:all 0.2s ease-in-out;
 				}
+			}
+			.zapri {
+				cursor:pointer;
+				margin:0 90px;
+				&:hover {
+					color:#FAC207;
+					transition:all 0.2s ease-in-out;
+				}
 			}	
 
 }
@@ -107,6 +116,7 @@ color:blue;
 letter-spacing:2px;
 }
 .menu {	
+	z-index:-1 !important;
 	width:200px;
 	font-size:18px;
 	letter-spacing:2px;

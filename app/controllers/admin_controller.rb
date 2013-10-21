@@ -2,7 +2,10 @@ class AdminController < ApplicationController
 before_filter :authenticate_user!
   def index
     @blogs = Blog.all.reverse
+    @projects = Project.all.reverse
+    @works = Work.all.reverse
   end
+
 
 
 
