@@ -13,15 +13,15 @@
 <div class="row">
 	<div class="large-8 large-offset-2 columns prijava">
 		<fieldset class="legend">
-		<legend>Sign In</legend>
+		<legend style="background-color:rgba(240, 240, 240, 0.0);">Sign In</legend>
 
 		<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
-  		<div class="glava"><h6><%= f.label :email %></h6></div>
+  		<div class="glava-top"><h6><%= f.label :email %></h6></div>
   			<%= f.email_field :email, :autofocus => true, :required => true, :pattern => '[^@]+@[^@]+\.[a-zA-Z]{2,6}' %>
   			</br>
-  		<div class="glava"><h6><%= f.label :password %></h6></div>
+  		<div class="glava-top"><h6><%= f.label :password %></h6></div>
   			<%= f.password_field :password, :required => true %>
-  		<div class="glava">
+  		<div class="glava-top">
   			<% if devise_mapping.rememberable? -%>
     		<h6><%= f.label :remember_me %><%= f.check_box :remember_me %></h6>	 
   		</div>

@@ -16,11 +16,11 @@
 /* Style for Social icons on right side */
 
 
-body .fix {position:fixed !important;position:absolute;top:180px;float:right;right:-10px;opacity:0.8;}
+body .fix {position:fixed !important;position:absolute;top:180px;float:right;right:-10px;}
 
 .social {
 		z-index: 2;
-		background:whitesmoke;
+		background-color:rgba(240, 240, 240, 0.8);
 		width:110px;
 		border-radius:10px;
 		margin:0;
@@ -144,38 +144,52 @@ letter-spacing:2px;
 	display:none;
 }
 .quotes {
-	width:200px;color:white;
+	width:200px;
 	
 	h6 {
 		font-size:20px;
 		font-family: 'Indie Flower', cursive;
 		text-align:center;
-		border-bottom:3px dotted #F2F2F2;color:white;
+		border-bottom:3px dotted #F2F2F2;
+		color:black;
 	}
 	h5 {
 		font-size:13px;
-		font-family: family;color:white;
+		font-family: family;
+		color:black;font-weight: bold;text-align:center;
+		font-weight:bolder;background-color:rgba(240, 240, 240, 0.3);
+		border-radius:10px;
 
 	}
 	h4 {
 		font-size:11px;
 		text-align:right;
-		font-family: family;color:white;
+		font-family: family;
 	}
 }
 
-.footer {background:#F0F0F0;height:140px; width:100%;position:absolute;margin-bottom:40px;}
-.footer-bg {background:#F0F0F0;}
+.footer {
+	background-color:rgba(240, 240, 240, 0.8);
+	height:140px; 
+	width:100%;
+	position:absolute;
+	margin-bottom:50px;
+}
+.footer-bg {
+	background-color:rgba(240, 240, 240, 0.1);
+
+}
 .footer-nav {
 	font-size:12px;
 	text-align:left;
-
+	
+	
 
 }
 
 .footer-links {
 	letter-spacing:1px;
-	
+
 		p, li {
 			text-align:right;
 			font-size:10px;
@@ -188,6 +202,12 @@ letter-spacing:2px;
 				}
 			}
 }
+
+.animate { 
+display:none;
+}
+
+
 
 @import url(http://fonts.googleapis.com/css?family=Cantora+One);
 @import url(http://fonts.googleapis.com/css?family=Indie+Flower);

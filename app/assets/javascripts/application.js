@@ -41,9 +41,24 @@ $(function(){ $(document).foundation(); });
 	showNextQuote();
 })();
 
+// --- funkcija za close socials
 
 $('.zapri').click(function () {
 	$(this).closest('.social').
 		delay().fadeOut(500)
+});
+
+// --- funkcija za footer show and back-to-up animation
+$(window).scroll(function() {
+		if(document.body.scrollHeight - $(this).scrollTop() <=$(this).height()) 
+		{
+		$('.animate').fadeIn(900);
+    	} else {}
+});
+
+$(document).ready(function() {
+	$("a.top").click(function() {
+	$("html,body").animate({"scrollTop" : 0},400);	
+	});
 });
 

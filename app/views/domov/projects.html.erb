@@ -1,11 +1,18 @@
 <h6><%=h content_for(:title, "All My Work And Projects / Blaz Sajovic") %></h6>
 
-
 <div class="row">
-	<div class="large-12 columns">
+	<div class="large-12 small-12 columns">
+		<div class="glava">
+			<h3>My Projects</h3>
+			<p><span>:-)</span> .</p>
+		</div>
+	</div>
+</div>	
+<div class="row">
+	<div class="large-12 small-12 columns">
 		<div class="section-container auto" data-section>
 			<section class="active">
-				<p class="title" data-section-title><a href="#panel1">Projects</a></p>
+				<p class="title" data-section-title><%= link_to "Projects", "#panel1", class: "" %></p>
 				<div class="content" data-section-content>
 					ilij
 				</div>
@@ -37,11 +44,13 @@
   					<% end %>	
     			</div>
   			</section>
+
 		</div>
 	</div>
 </div>
 
 
+<div class="row">
+<div style="height:500px;position:relative;"></div>
 
-
-
+</div>
