@@ -20,7 +20,7 @@ body .fix {position:fixed !important;position:absolute;top:180px;float:right;rig
 
 .social {
 		z-index: 2;
-		background-color:rgba(240, 240, 240, 0.8);
+		background: rgba(255, 255, 255, 0.7);
 		width:110px;
 		border-radius:10px;
 		margin:0;
@@ -42,10 +42,10 @@ body .fix {position:fixed !important;position:absolute;top:180px;float:right;rig
 		h1 {
 			font-size:13px;
 			text-align:center;
-			font-weight:bold;
-			letter-spacing:1px;
+			font-weight:bolder;
+			letter-spacing:2px;
 			font-family: 'Cantora One';
-			color: #FAC207;
+			color: black;
 
 		}
 			.twitter {
