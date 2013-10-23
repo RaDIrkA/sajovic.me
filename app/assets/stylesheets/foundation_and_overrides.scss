@@ -51,7 +51,7 @@ $em-base: 16 !default;
 
 $default-float: left;
 
-// $body-bg: #fff;
+$body-bg: #F0F0F0;
 // $body-font-color: #222;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
@@ -1029,12 +1029,12 @@ $custom-dropdown-font-color-selected: #fff;
 
 // These style the titles
 
-// $section-title-color: #333;
-// $section-title-color-active: #333;
+$section-title-color: #fff;
+$section-title-color-active: #333;
 $section-title-bg:rgba(240, 240, 240, 0.8);
 // $section-title-bg-active: darken($section-title-bg, $section-function-factor);
 $section-title-bg-active-tabs: rgba(240, 240, 240, 0.8);
-$section-title-bg-hover: none;
+$section-title-bg-hover: #F0F0F0;
 
 // Want to control border size, here ya go!
 
@@ -1044,7 +1044,7 @@ $section-border-color: none;
 
 // Font controls
 
-// $section-font-size: emCalc(14);
+$section-font-size: emCalc(15);
 
 // Control the color of the background and some size options
 
@@ -1234,11 +1234,11 @@ $section-content-bg: rgba(240, 240, 240, 0.8);
 
 // Background color for the top bar
 
-$topbar-bg: rgba(240, 240, 240, 0.0);
+$topbar-bg: rgba(240, 240, 240, 0.2);
 
 // Height and margin
 
-$topbar-height: 55px;
+// $topbar-height: 55px;
 $topbar-margin-bottom: emCalc(30);
 
 // Control Input height for top bar
@@ -1254,15 +1254,15 @@ $topbar-margin-bottom: emCalc(30);
 
 $topbar-dropdown-bg: #75A0D4;
 // $topbar-dropdown-link-color: #fff;
-$topbar-dropdown-link-bg: lighten($topbar-bg, 15%);
+$topbar-dropdown-link-bg: lighten($topbar-bg, 100%);
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: #fff;
 // $topbar-dropdown-toggle-alpha: 0.5;
 
 // Set the link colors and styles for top-level nav
 
-$topbar-link-color: #0A68F7;
-// $topbar-link-color-hover: #fff;
+$topbar-link-color: #FFFFFF;
+$topbar-link-color-hover: #290AF7;
 // $topbar-link-color-active: #fff;
 // $topbar-link-weight: bold;
 // $topbar-link-font-size: emCalc(13);
@@ -1280,7 +1280,7 @@ $topbar-dropdown-label-color: #ACBBCD;
 // $topbar-menu-link-transform: uppercase;
 // $topbar-menu-link-font-size: emCalc(13);
 // $topbar-menu-link-weight: bold;
-$topbar-menu-link-color: #4F80BC;
+$topbar-menu-link-color: none;
 $topbar-menu-icon-color: #4F80BC;
 // $topbar-menu-link-color-toggled: #888;
 // $topbar-menu-icon-color-toggled: #888;
@@ -1293,7 +1293,7 @@ $topbar-menu-icon-color: #4F80BC;
 
 // Divider Styles
 
-// $topbar-divider-border-bottom: solid 1px lighten($topbar-bg, 10%);
+$topbar-divider-border-bottom: solid 1px lighten($topbar-bg, 10%);
 // $topbar-divider-border-top: solid 1px darken($topbar-bg, 10%);
 
 // Sticky Class
