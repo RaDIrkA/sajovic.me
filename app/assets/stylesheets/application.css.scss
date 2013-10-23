@@ -170,13 +170,13 @@ letter-spacing:2px;
 
 .footer {
 	background-color:rgba(240, 240, 240, 0.8);
-	height:140px; 
+	height:120px; 
 	width:100%;
-	position:absolute;
+	position:absolute;margin:50px auto;
 	
 }
-.footer-bg {
-	background-color:rgba(240, 240, 240, 0.1);
+ .footer-bg {
+	background-color:rgba(240, 240, 240, 0.0);
 
 }
 .footer-nav {
@@ -208,6 +208,6 @@ display:none;
 }
 
 
-
+.top-hide {height:50px;}
 @import url(http://fonts.googleapis.com/css?family=Cantora+One);
 @import url(http://fonts.googleapis.com/css?family=Indie+Flower);
