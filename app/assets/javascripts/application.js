@@ -49,12 +49,7 @@ $('.zapri').click(function () {
 });
 
 // --- funkcija za footer show and back-to-up animation
-$(window).scroll(function() {
-		if(document.body.scrollHeight - $(this).scrollTop() <=$(this).height()) 
-		{
-		$('.animate').fadeIn(900);
-    	} else {}
-});
+
 
 $(document).ready(function() {
 	$("a.top").click(function() {
