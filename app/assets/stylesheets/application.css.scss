@@ -16,7 +16,7 @@
 /* Style for Social icons on right side */
 
 
-body .fix {position:fixed !important;position:absolute;top:180px;float:right;right:-10px;}
+body .fix {position:fixed !important;position:absolute;top:180px;float:right;right:-10px;opacity:0.8;}
 
 .social {
 		z-index: 2;
@@ -122,7 +122,7 @@ letter-spacing:2px;
 	letter-spacing:2px;
 	color: #132781;
 		li {
-			text-align:right;
+			text-align:center;background:#F0F0F0;width:120px;border-radius:15px;
 			color: #000013;
 			font-family: family;
 				& :hover {
@@ -141,29 +141,31 @@ letter-spacing:2px;
 	display:none;
 }
 .quotes {
-	width:200px;
+	width:200px;color:white;
+	
 	h6 {
 		font-size:20px;
 		font-family: 'Indie Flower', cursive;
 		text-align:center;
-		border-bottom:3px dotted #F2F2F2;
+		border-bottom:3px dotted #F2F2F2;color:white;
 	}
 	h5 {
 		font-size:13px;
-		font-family: family;
+		font-family: family;color:white;
 
 	}
 	h4 {
 		font-size:11px;
 		text-align:right;
-		font-family: family;
+		font-family: family;color:white;
 	}
 }
 
-
+.footer {background:#F0F0F0;height:120px; width:100%;opacity:0.8;position:absolute; margin:15px 0 ;}
 .footer-nav {
 	font-size:12px;
 	text-align:left;
+	
 
 }
 

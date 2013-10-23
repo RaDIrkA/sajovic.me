@@ -1234,7 +1234,7 @@ $section-border-color: #fff;
 
 // Background color for the top bar
 
-$topbar-bg: #ACBBCD;
+$topbar-bg: #F0F0F0;
 
 // Height and margin
 
@@ -1252,7 +1252,7 @@ $topbar-margin-bottom: emCalc(30);
 
 // Style the top bar dropdown elements
 
-$topbar-dropdown-bg: #ACBBCD;
+$topbar-dropdown-bg: #75A0D4;
 // $topbar-dropdown-link-color: #fff;
 $topbar-dropdown-link-bg: lighten($topbar-bg, 15%);
 // $topbar-dropdown-toggle-size: 5px;
@@ -1261,7 +1261,7 @@ $topbar-dropdown-link-bg: lighten($topbar-bg, 15%);
 
 // Set the link colors and styles for top-level nav
 
-// $topbar-link-color: #fff;
+$topbar-link-color: #0A68F7;
 // $topbar-link-color-hover: #fff;
 // $topbar-link-color-active: #fff;
 // $topbar-link-weight: bold;
@@ -1280,8 +1280,8 @@ $topbar-dropdown-label-color: #ACBBCD;
 // $topbar-menu-link-transform: uppercase;
 // $topbar-menu-link-font-size: emCalc(13);
 // $topbar-menu-link-weight: bold;
-// $topbar-menu-link-color: #ACBBCD;
-// $topbar-menu-icon-color: #fff;
+$topbar-menu-link-color: #4F80BC;
+$topbar-menu-icon-color: #4F80BC;
 // $topbar-menu-link-color-toggled: #888;
 // $topbar-menu-icon-color-toggled: #888;
 
