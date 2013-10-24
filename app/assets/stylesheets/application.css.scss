@@ -169,7 +169,7 @@ letter-spacing:2px;
 }
 
 .footer {
-	background-image:url("/assets/footer-bg.png"); 
+	
 	-webkit-box-shadow: 0px -3px 4px rgba(50, 50, 50, 0.39);
 	-moz-box-shadow:    0px -3px 4px rgba(50, 50, 50, 0.39);
 	box-shadow:         0px -3px 4px rgba(50, 50, 50, 0.69);
@@ -187,7 +187,29 @@ letter-spacing:2px;
 				}
 			}
 		.footer-bg {
-			background-color:rgba(240, 240, 240, 0.5);
+			
+background-image: -ms-linear-gradient(top left, #FFFFFF 0%, #EFD31D 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top left, #FFFFFF 0%, #EFD31D 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top left, #FFFFFF 0%, #EFD31D 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #FFFFFF), color-stop(1, #EFD31D));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top left, #FFFFFF 0%, #EFD31D 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom right, #FFFFFF 0%, #EFD31D 100%);
+
+
+
+-webkit-box-shadow: 0px 3px 23px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 3px 23px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 3px 23px rgba(50, 50, 50, 0.75);
 		}
 		a {
 			font-weight:bold;
@@ -221,21 +243,7 @@ letter-spacing:2px;
 	}
 
 }
-.footer-links {
-	
-	font-size:11px;
 
-		p, li {
-		
-			& :hover {
-					color:#313131;
-					-webkit-transition: all 0.6s ease-in-out;
-					-moz-transition: all 0.6s ease-in-out;
-					-o-transition: all 0.6s ease-in-out;
-					transition: all 0.6s ease-in-out;
-				}
-			}
-}
 
 
 
