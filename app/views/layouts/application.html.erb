@@ -139,60 +139,83 @@
         <li class="github"><p><%= link_to "GitHub", "https://github.com/RaDIrkA", :target => "_blank" %></p></li>
         <li class="linkedin"><p><%= link_to "LinkedIn", "http://www.linkedin.com/pub/bla%C5%BE-sajovic/80/b39/25", :target => "_blank" %></p></li>
         <p class="zapri" title="Close">&#967;</p>
-
       </ul>
-      
      </div> 
- 
   </div>
 
-  
+   
 
   </div>
   
 
  
 
+<div class="footer">
+  <div class="row footer-bg">
+    <div class="large-6 small-12 columns left-footer-nav">
+      <ul class="inline-list">
+        <li><%= link_to_unless_current "About me", domov_path %></li>
+        <li><%= link_to_unless_current "Blogs", blogs_articles_path %></li>
+        <li><%= link_to_unless_current "My Projects", our_projects_path %></li>                             <li><%= link_to_unless_current "Contact Me", contact_us_path %></li>
+        <li><%= link_to_unless_current "Admin", login_path %></li>
+      </ul>
+      <p>Copyright &copy; 2013 Blaz Sajovic, All rights reserved.<br>
+       Innovative Web & Computers Services &raquo; <%= link_to "Spletko.eu", "http://spletko.eu/", :target => "_blank" %></p>
+       <br/>
+       <%= link_to "Back Top", "#", class: "top" %> 
+    </div>
 
 
- 
-  <div class="animate">
-  <div class="footer">
-  <div class="row">
-  
-    <div class="large-5 columns">
-      <div class="footer-nav">
-        <ul class="inline-list footer-links">
-          <li class="menu-nav"><%= link_to_unless_current "About me", domov_path %></li>
-          <li><%= link_to_unless_current "Blogs", blogs_articles_path %></li>
-          <li><%= link_to_unless_current "My Projects", our_projects_path %></li>
-          <li><%= link_to_unless_current "Contact Me", contact_us_path %></li>
-          <li><%= link_to_unless_current "Admin", login_path %></li>
+
+
+
+
+    <div class="large-6 small-12 columns right-footer-nav">
+      <ul class="right-nav">
+        <li>Powered by <%= link_to "Ruby on rails", "http://rubyonrails.org/", :target => "_blank" %></li>
+        <li>Build on <%= link_to "Foundation", "http://foundation.zurb.com/", :target => "_blank" %> with my own customizations </li>
+        <li>Deployed => <%= link_to "Heroku", "https://www.heroku.com/", :target => "_blank" %></li>
+        <li>Git Repository => <%= link_to "GitHub", "https://github.com/", :target => "_blank" %></li>
+        <li>Using most customizable editor => <%= link_to "CKEditor", "http://ckeditor.com/", :target => "_blank" %></li>      
+      </ul>
+    </div> 
+      
+  </div>
+ </div>
+
+
+        
+
+
+<!---
+          <div class="large-6 columns footer-nav1">
+        <ul class="inline-list">
+            <li><%= link_to_unless_current "About me", domov_path %></li>
+            <li><%= link_to_unless_current "Blogs", blogs_articles_path %></li>
+            <li><%= link_to_unless_current "My Projects", our_projects_path %></li>
+            <li><%= link_to_unless_current "Contact Me", contact_us_path %></li>
+            <li><%= link_to_unless_current "Admin", login_path %></li>
         </ul>
         <p>Copyright &copy; 2013 Blaz Sajovic, All rights reserved.<br>
         Innovative Web & Computers Services &raquo; <%= link_to "Spletko.eu", "http://spletko.eu/", :target => "_blank" %></p>
+
+        <%= link_to "Back Top", "#", class: "top" %>  
       </div>
-    </div>
+      
+      <div class="large-6 columns">  
+        <ul class="footer-nav">
+          <li>Powered by <%= link_to "Ruby on rails", "http://rubyonrails.org/", :target => "_blank" %></li>
+          <li>Build on <%= link_to "Foundation", "http://foundation.zurb.com/", :target => "_blank" %> with my own customizations </li>
+          <li>Deployed => <%= link_to "Heroku", "https://www.heroku.com/", :target => "_blank" %></li>
+          <li>Git Repository => <%= link_to "GitHub", "https://github.com/", :target => "_blank" %></li>
+          <li>Using most customizable editor => <%= link_to "CKEditor", "http://ckeditor.com/", :target => "_blank" %></li>
+        </ul>
+      </div> 
+      
+  -->
 
 
-    <div class="large-2 columns">
-      <%= link_to "Back Top", "#", class: "top" %>  
-    </div>
-  
-    <div class="large-5 columns">
-      <div class="footer-links">
-        <p>Powered by <%= link_to "Ruby on rails", "http://rubyonrails.org/", :target => "_blank" %><br>
-          Build on <%= link_to "Foundation", "http://foundation.zurb.com/", :target => "_blank" %> with my own customizations <br>
-          Deployed => <%= link_to "Heroku", "https://www.heroku.com/", :target => "_blank" %><br>
-          Git Repository => <%= link_to "GitHub", "https://github.com/", :target => "_blank" %><br>
-          Using most customizable editor => <%= link_to "CKEditor", "http://ckeditor.com/", :target => "_blank" %></p> 
-      </div>
-    </div>
 
- </div>   
-    </div>
-
-  </div>  
   <%= javascript_include_tag "application" %>
 
 
