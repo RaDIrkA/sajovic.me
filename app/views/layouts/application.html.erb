@@ -140,9 +140,9 @@
         <li class="linkedin"><p><%= link_to "LinkedIn", "http://www.linkedin.com/pub/bla%C5%BE-sajovic/80/b39/25", :target => "_blank" %></p></li>
         <p class="zapri" title="Close">&#967;</p>
       </ul>
-     </div> 
+    </div> 
   </div>
-
+  <p id="back-top"><a href="#top" title="Back to Up"><br/><br></a></p>
    
 
   </div>
@@ -162,7 +162,6 @@
       <p>Copyright &copy; 2013 Blaz Sajovic, All rights reserved.<br>
        Innovative Web & Computers Services &raquo; <%= link_to "Spletko.eu", "http://spletko.eu/", :target => "_blank" %></p>
        <br/>
-       <%= link_to "Back Top", "#", class: "top" %> 
     </div>
 
 
@@ -192,6 +191,15 @@
 
   <%= javascript_include_tag "application" %>
 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-45114921-1', 'sajovic.me');
+  ga('send', 'pageview');
+
+</script>
   </body>
 </html>

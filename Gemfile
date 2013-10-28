@@ -8,6 +8,8 @@ gem 'pg'
 gem 'devise'
 gem 'ckeditor'
 gem 'paperclip'
+
+
 # Use SCSS for stylesheets
 group :assets do
 	gem 'sass-rails', '~> 4.0.0'

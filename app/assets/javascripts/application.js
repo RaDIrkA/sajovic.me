@@ -51,9 +51,27 @@ $('.zapri').click(function () {
 // --- funkcija za footer show and back-to-up animation
 
 
-$(document).ready(function() {
-	$("a.top").click(function() {
-	$("html,body").animate({"scrollTop" : 0},400);	
+
+
+function backToTop () {
+	$("#back-top").hide();
+
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 100) {
+			$("#back-top").fadeIn();
+		} else {
+			$("#back-top").fadeOut();
+		}	
 	});
-});
+	// scroll na 0px on Click 
+	$("#back-top a").click(function() {
+		$("body,html").animate ( {
+			scrollTop: 0
+		}, 800);
+		return false;
+	});
+}
+
+backToTop();
+
 

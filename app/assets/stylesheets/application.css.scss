@@ -16,8 +16,13 @@
 /* Style for Social icons on right side */
 
 
-body .fix {position:fixed !important;position:absolute;top:180px;float:right;right:-10px;}
-
+body .fix {
+	position:fixed !important;
+	position:absolute;
+	top:180px;
+	float:right;
+	right:-10px;
+}
 .social {
 		z-index: 2;
 		background: rgba(255, 255, 255, 0.7);
@@ -95,7 +100,20 @@ body .fix {position:fixed !important;position:absolute;top:180px;float:right;rig
 
 }
 
+#back-top {
+	position:fixed;
+	bottom:40px;
+	margin:0;
+	z-index:9999;
+	display: none;
 
+	a {
+		background:url("/assets/back_to_top.png") no-repeat scroll center center !important;
+		width:42px !important; 
+		display: block;
+
+	}
+}
 
 
 
@@ -175,7 +193,7 @@ letter-spacing:2px;
 	box-shadow:         0px -3px 4px rgba(50, 50, 50, 0.69);
 	position:absolute; margin:120px 0;
 	width:100%; 
-	font-size:13px;
+	font-size:12px;
 	
 		li {
 			& :hover {
@@ -200,7 +218,7 @@ letter-spacing:2px;
 
 		p {
 			letter-spacing: -1px;
-			font-size:14px;
+			font-size:13px;
 			top:20px; position:relative;
 
 			a {
@@ -213,7 +231,7 @@ letter-spacing:2px;
 	}
 	.right-footer-nav {
 		text-align:right;	
-		font-size: 14px;
+		font-size: 13px;
 		
 		
 		.right-nav {
