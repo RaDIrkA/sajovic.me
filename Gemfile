@@ -9,7 +9,7 @@ gem 'devise'
 gem 'ckeditor'
 gem 'paperclip'
 
-
+gem 'newrelic_rpm'
 # Use SCSS for stylesheets
 group :assets do
 	gem 'sass-rails', '~> 4.0.0'
