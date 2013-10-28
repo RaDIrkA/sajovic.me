@@ -5,7 +5,7 @@
 #
 # Generated October 28, 2013
 #
-# This configuration file is custom generated for sajovic
+# This configuration file is custom generated for app18632347@heroku.com
 
 
 # Here are the settings that are common to all environments
@@ -15,7 +15,7 @@ common: &default_settings
   # You must specify the license key associated with your New Relic
   # account.  This key binds your Agent's data to your account in the
   # New Relic service.
-  license_key: '00121cfe77fe19924a5ae19e37f4e99217fa0f81'
+  license_key: '54b11e31bc1e2e3c6713889abf9c866ae5863960'
 
   # Agent Enabled (Ruby/Rails Only)
   # Use this setting to force the agent to run or not run.
