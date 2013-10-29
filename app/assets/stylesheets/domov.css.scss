@@ -195,6 +195,7 @@
 	background-color:white;
 	text-align:left;
 	font-family: 'Cantora One', sans-serif;
+	letter-spacing:0px;
 	.work-d {
 		position:relative;
 		
@@ -203,13 +204,29 @@
 		font-size:13px;
 		
 		}
-		.ror-png {
+
 		
-		}
 	}
 }
+.project {
+	font-family: 'Cantora One', sans-serif;font-weight:bold;letter-spacing:-1px;
+}
 
-
+.red {
+	color:red;
+	font-size:15px;
+}
+.white {
+	color:white;
+	font-size:15px;
+}
+.blue {
+	color:blue;
+	font-size:15px;
+}
+.siva-bg {
+	background-color:#BABABA;
+}
 
 
 
