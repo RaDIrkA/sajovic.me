@@ -196,16 +196,8 @@
 	text-align:left;
 	font-family: 'Cantora One', sans-serif;
 	letter-spacing:0px;
-	.work-d {
-		position:relative;
-		
-		p {
-		text-align:left;
-		font-size:13px;
-		
-		}
-
-		
+	p {	
+		font-size:12px;
 	}
 }
 .project {
@@ -214,7 +206,7 @@
 
 .red {
 	color:red;
-	font-size:15px;
+	font-size:20px; letter-spacing:-1px;
 }
 .white {
 	color:white;
@@ -227,7 +219,25 @@
 .siva-bg {
 	background-color:#BABABA;
 }
+.red-bg {
+	background-color:#F62F26;
+}
+.blue-bg {
+	background-color:#0976FB;
+}
+.blur {
+	text-align:center;
+	text-shadow: 0 0 3px #000, 3px 0 3px #000, 0 3px 3px #000, -3px 0 3px #000, 0 -3px 3px #000;
+	letter-spacing:1px;
+}
+.bottom-project {
+	border-bottom:1px solid black;
+	-webkit-box-shadow:0 4px 5px #949494;
+	-moz-box-shadow:0 4px 5px #949494;
+	-o-box-shadow:0 4px 5px #949494;
+	-ms-box-shadow:0 4px 5px #949494;
+	box-shadow:0 4px 5px #949494;
 
-
+}
 
 @import url(http://fonts.googleapis.com/css?family=Cantora+One);

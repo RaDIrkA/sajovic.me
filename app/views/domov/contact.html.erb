@@ -14,29 +14,34 @@
 
 		<form>
 			<fieldset>
-			<legend style="background-color:rgba(240, 240, 240, 0.0);">I don't bite"</legend>
+			<legend style="background-color:rgba(240, 240, 240, 0.0);">Fell free to ask anything"</legend>
 				<div class="row">			
-					<div class="large-6 small-12 columns">	
+					<div class="large-6 small-12 columns">
+						<label>Name</label>	
 						<input type="text" placeholder="First Name">
 					</div>	
 					<div class="large-6 small-12 columns">
+						<label>Email</label>
 						<input type="text" placeholder="email@example.com">	
 					</div>
 				</div>	
 				<div class="row">
 	
 					<div class="large-12 columns">
+					<label>Website</label>
 						<div class="row collapse">
 							<div class="large-5 columns">
-							<span class="prefix">your website</span>
+							
+							<span class="prefix">http://</span>
 							</div>
 						<div class="large-7 columns">	
-							<input type="text" placeholder="wwwwsaas-sd,com">
+							<input type="text" placeholder="sajovic.me">
 						</div>
 					</div>
 				
-						<label>pisi sm kar </label>
-						<textarea placeholder="napisisissss"></textarea>	
+						<label>Subject</label>
+						<textarea placeholder="..."></textarea>	
+						<%= link_to :Send, "#", class: "button secondary small prefix" %>
 					
 				</div>			
 			</fieldset>	
