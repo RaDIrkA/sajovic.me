@@ -80,7 +80,7 @@ $ (document).ready (function() {
 	$("p.in2").delay(1200).fadeIn(1500);
 	$("p.in3").delay(3000).fadeIn(1500); 
 	$("div.glava").fadeIn(1200); // Naslov
-	$("div.about_me").delay(1400).fadeIn(1200);  // o meni
-	$("div.hobbi").delay(1600).fadeIn(1200);  // moji hobbies
-	$("div.our-team").delay(2200).fadeIn(1200); // our team
+	$("div.about_me").delay(400).fadeIn(1200);  // o meni
+	$("div.hobbi").delay(600).fadeIn(1200);  // moji hobbies
+	$("div.our-team").delay(800).fadeIn(1200); // our team
 });
