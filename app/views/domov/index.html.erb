@@ -1,6 +1,9 @@
 <div class="row">
 	<div class="large-12 columns">
-		<div class="glava">
+		<div class="fadeIn-text">
+			<p class="in1" style="display:none;float:left;">PRVI</p><p class="in2" style="display:none;float:left;padding-left:10px;">DRUGI</p><p class="in3" style="display:none;float:left;padding-left:10px;">TRETJI</p>
+		</div><br/>
+		<div class="glava" style="display:none;">	
 			<h3>Who is Blaz?</h3>
 			<p><span>Ruby on Rails</span> Developer, Computer repair tehnician and many other amazing things.</p>
 		</div>
@@ -10,7 +13,7 @@
 <!--Sekcija opis: opis-->	
 <div class="row">
 	<div class="large-7 columns">
-		<div class="panel about_me">
+		<div class="panel about_me" style="display:none;">
 			<img src="assets/me.jpg" alt="Blaz Sajovic">	
 			<p>Blaz Sajovic's computer adventure started at the age of ten. He initially worked on computer components and later started computing services, repair and maintenance. Soon he began discovering network and in year 2006 made his first web page in Dreamweaver. In the same year he finished with web productions and start again in May 2013. First project was written in html and css languages but after he acquire sufficient amount of skills he continued working with php, JavaScript, jQuery and Ajax. Finally after months of hard work, in august 2013, he focused on Ruby on Rails and now continues his growth in web design.</p>
 		</div>
@@ -18,7 +21,7 @@
 
 <!--Sekcija opis: hobiji-->
 	<div class="large-5 columns">
-		<div class="panel hobbi">
+		<div class="panel hobbi" style="display:none;">
 			<img src="assets/me-park.jpg" alt="Postulovski park Postojnska Jama">
 			<h4>Blaz's Favorite Things</h4>
 			<ul class="side-nav circle">
@@ -40,11 +43,13 @@
 <div class="row">
 
 	<div class="large-12 columns">
-		<div class="glava">
-			<h3>Our Team</h3>
-			<p>Visit <span><%= link_to "Spletko.eu", "http://spletko.eu", :target => 
-			"_blank", :class => "link" %></span> Computers services and web page builders.</p>
-			<img class="logo" src="assets/logo.png" alt="računalniške storitve, spletko.eu">
+		<div class="our-team" style="display:none;">
+			<div class="glava">
+				<h3>Our Team</h3>
+				<p>Visit <span><%= link_to "Spletko.eu", "http://spletko.eu", :target => 
+				"_blank", :class => "link" %></span> Computers services and web page builders.</p>
+				<img class="logo" src="assets/logo.png" alt="računalniške storitve, spletko.eu">
+			</div>
 		</div>
 	</div>
 
