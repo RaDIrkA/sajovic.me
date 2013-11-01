@@ -152,24 +152,27 @@
 
 <div class="footer">
   <div class="row">
-    <div class="large-6 small-12 columns left-footer-nav">
+    <div class="large-5 small-12 columns left-footer-nav">
       <ul class="inline-list">
         <li><%= link_to_unless_current "About me", domov_path %></li>
         <li><%= link_to_unless_current "Blogs", blogs_articles_path %></li>
         <li><%= link_to_unless_current "My Projects", our_projects_path %></li>                             <li><%= link_to_unless_current "Contact Me", contact_us_path %></li>
-        <li><%= link_to_unless_current "Admin", login_path %></li>
+        <li style="margin:0 140px;"><%= link_to_unless_current "Admin", login_path %></li>
       </ul>
       <p>Copyright &copy; 2013 Blaz Sajovic, All rights reserved.<br>
        Innovative Web & Computers Services &raquo; <%= link_to "Spletko.eu", "http://spletko.eu/", :target => "_blank" %></p>
        <br/>
     </div>
 
+    <div class="large-2 columns" style="font-size:10px;text-align:center;">
+      <br/><a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This work by <a xmlns:cc="http://creativecommons.org/ns#" href="sajovic.me" property="cc:attributionName" rel="cc:attributionURL">Blaz Sajovic</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
+    </div>
 
 
 
 
-
-    <div class="large-6 small-12 columns right-footer-nav">
+    <div class="large-5 small-12 columns right-footer-nav">
+    <br/>
       <ul class="right-nav">
         <li>Powered by <%= link_to "Ruby on rails", "http://rubyonrails.org/", :target => "_blank" %></li>
         <li>Build on <%= link_to "Foundation", "http://foundation.zurb.com/", :target => "_blank" %> with my own customizations </li>

@@ -2,7 +2,7 @@
 
 <div class="row">
 	<div class="large-12 small-12 columns">
-		<div class="glava">
+		<div class="glava" style="display:none;">
 			<h3>My Projects</h3>
 		</div>
 	</div>
@@ -13,10 +13,7 @@
 		<div class="section-container tabs" data-section="tabs">
 			<section class="active">
 				<p class="title" data-section-title><%= link_to "Projects", "#panel1", class: "project" %></p>
-				<div class="content" data-section-content>
-
-
-				
+				<div class="content" data-section-content>		
 					<ul data-orbit >
 						<li>
 							<img src="assets/Slider/sajovic.jpg" alt="sajovic.me">
@@ -28,7 +25,7 @@
 						</li>
 						<li>
 							<img src="assets/Slider/lcd-repair.jpg" alt="sajovic.me">
-							<div class="orbit-caption">During LCD reparing</div>
+							<div class="orbit-caption">During LCD repairing</div>
 						</li>	
 						<li>
 							<img src="assets/Slider/work-with-code.jpg" alt="sajovic.me">
@@ -36,47 +33,52 @@
 						</li>	
 						<li>
 							<img src="assets/Slider/working-with-laptops.jpg" alt="sajovic.me">
-							<div class="orbit-caption">All services complite with laptops</div>
+							<div class="orbit-caption">All services complete with laptops</div>
 						</li>	
 						<li>
 							<img src="assets/Slider/xbox.jpg" alt="sajovic.me">
 							<div class="orbit-caption">Flashing Fat Xbox360 LT+</div>
 						</li>																																					
-					</ul>		
+					</ul>	
+					<div class="row">
+						<div class="large-12 columns">
+							<div class="panel">
+								<p style="font-size:12px;text-align:center;">My Project <br>// Sajovic.me (Ruby On Rails, SASS, Jquery) //</p>
+							</div>
+						</div>
+					</div>	
 
 
-			<hr>		
-			<br/>
-			<blockquote>One of my most productive days was throwing away 1000 lines of code.
-				<cite>Ken Thompson</cite>
-			</blockquote>
-			
+
 					
 			
 			<hr>
 			<div class="row project-all">
 				<div class="large-8 columns">
-					<p>I am <span class="siva-bg"><span class="white">Slo</span><span class="blue">ven</span><span class="red">ian</span></span> junor <span class="red">Ruby</span> on <span class="red">Rails</span> developer<br/> I have some leanguage knowljič ( html, css , little php ). Im working with scripts (JavaScript, Jquery, CoffeScript).</p>
-					<br/>
-					<p>This project was written in <span class="red">Ruby</span>-v <kbd>"2.0.0"</kbd> and <br/>
-					<span class="red">Rails</span> -v <kbd>"4.0.0"</kbd><br/>
-					<span class="red">Ruby</span> on <span class="red">Rails</span><span class="blue">&reg;</span>
-					is an open-source web framework that's optimized for programmer happiness and sustainable productivity.
-					It lets you write beautiful code by favorite convention over configuration.<br>
-					<span class="red">Rails</span> was created in 2003 by <%= link_to "David Heinemeier", "http://david.heinemeierhansson.com" %> and has since been extended by the <%= link_to "Rails core team", "http://rubyonrails.org/core" %>, <%= link_to "more than 3,100 contributors", "http://contributors.rubyonrails.org" %>.</p>
-					<hr/>
-					<p>For Front-end im using <span class="blue">Foundation 4 from ZURB</span><br/>
-					The most advanced responsive front-end framework in the world. <br/>
-					read => <%= link_to ".::more::.", "http://foundation.zurb.com" %><hr/>
-					<span class="blue">What's new in 4?</span>:<br/>
-					<p>Responsive design lighter, faster and more advanced...</p><hr>
-					<span class="blue">Foundation</span><br/>
-					<p>is made by <%= link_to "ZURB", "http://www.zurb.com" %>, a product design company in Campbell, California.<br/>
-					More than 15 years of experoence building web products, services and websites into this framework.</p>
+					<p>I am //* <span class="siva-bg"><span class="white">Slo</span><span class="blue">ven</span><span class="red">ian</span></span>*// Junior <span class="red"> Ruby </span> on <span class="red"> Rails </span> developer.<br/> I have some leanguage knowljič ( html, css , little php ). Im working with scripts (JavaScript, Jquery, CoffeScript).</p><br/>
+					<p>This project was written in: </p><hr/><p><span class="red">Ruby</span>-v <kbd>"2.0.0"</kbd><br/>
 				</div>
 				<div class="large-4 columns">	
 					<img src="assets/project/ruby-on-rails.png" alt="ruby on rails" class="ror-png"> 	
 				</div>
+				<div class="large-12 columns">
+
+					<span class="red">Rails</span> -v <kbd>"4.0.0"</kbd></p><hr/>
+					<p><span class="red">Ruby</span> on <span class="red">Rails</span><span class="blue">&reg;</span>
+					is an open-source web framework that's optimized for programmer happiness and sustainable productivity.
+					It lets you write beautiful code by favorite convention over configuration.<br>
+					<span class="red">Rails</span> was created in 2003 by <%= link_to "David Heinemeier", "http://david.heinemeierhansson.com", target: "_blank" %> and has since been extended by the <%= link_to "Rails core team", "http://rubyonrails.org/core", target: "_blank" %>, <%= link_to "more than 3,100 contributors", "http://contributors.rubyonrails.org", target: "_blank" %>.</p>
+					<hr/>
+					<p>For Front-end im using <span class="blue">Foundation 4 from ZURB</span><br/>
+					The most advanced responsive front-end framework in the world. <br/>
+					read => <%= link_to ".::more::.", "http://foundation.zurb.com", target: "_blank" %><hr/>
+					<span class="blue">What's new in 4?</span>:<br/>
+					<p>Responsive design lighter, faster and more advanced...</p><hr>
+					<span class="blue">Foundation</span><br/>
+					<p>is made by <%= link_to "ZURB", "http://www.zurb.com", target: "_blank" %>, a product design company in Campbell, California.<br/>
+					More than 15 years of experoence building web products, services and websites into this framework.</p>
+				</div>
+
 
 				<div class="large-12 columns">
 					<p>My project have admin panel and dashboard for adding blogs, work and new project</p><br/>
@@ -92,9 +94,9 @@
 				<div class="large-12 columns">
 					<p>For editing iam using <span class="blue">CKEditor</span>.
 					<hr/>
-					<%= link_to "CKEditor", "http://ckeditor.com", class: "blue" %><p> is a ready-for-use HTML text editor designed to simplify web content creation. It's a WYSIWYG editor that brings common word processor features directly to your web pages. Enhance your website experience with our community maintained editor. </p><br/>
+					<%= link_to "CKEditor", "http://ckeditor.com", class: "blue", target: "_blank" %><p> is a ready-for-use HTML text editor designed to simplify web content creation. It's a WYSIWYG editor that brings common word processor features directly to your web pages. Enhance your website experience with our community maintained editor. </p><br/>
 					<p>It's <span class="blue-bg">free & open source </span>, <span class="red-bg">The best</span> web text editor for everyone => 
-					<%= link_to ".::more::.", "http://ckeditor.com/" %>
+					<%= link_to ".::more::.", "http://ckeditor.com/", target: "_blank" %>
 					<img src="assets/project/ckeditor.png" alt="sajovic.me ckeditor"><br/>
 					<hr>
 				</div>
