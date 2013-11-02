@@ -1,15 +1,19 @@
 /*
-  Place all the styles related to the matching controller here.
-  They will automatically be included in application.css.
-
+  Welcome animation with jquery
 */
-.fadeIn-text {
-	color:red;width:400px;
+.welcome-msg {
+
+	letter-spacing:1px;
+	color:blue;
+	span {
+		display: none;
+		font-size:12px;
+		font-family: arial,helvetica,sans-serif;
+	}
 }
-
-
-
-
+/*
+  Title of pages
+*/
 .glava-top, h6 {
 	background-color:rgba(240, 240, 240, 0.0);
 	font-family: 'Cantora One', sans-serif;
@@ -21,9 +25,6 @@
 	font-family: 'Indie Flower', cursive;
 	font-size:38px;
 	letter-spacing:1px;
-	
-	
-	
 
 		h6 {
 			font-family: 'Cantora One', sans-serif;
@@ -68,10 +69,11 @@
 				-o-transform:rotateZ(360deg);
 				-ms-transform:rotateZ(360deg);
 				transform:rotateZ(360deg);
-			}
-
-			
+			}			
 }
+/*
+  Div about me 
+*/
 .about_me {
 	background-color:rgba(240, 240, 240, 0.8);
 	box-shadow:0px 3px 12px #E1D3D3;
@@ -87,9 +89,10 @@
 		font-size:13px;
 		font-family: 'Cantora One', sans-serif;
 	}
-
 }
-
+/*
+  My hobbie's
+*/
 .hobbi {
 	background-color:rgba(240, 240, 240, 0.8);
 	font-size:13px;
@@ -105,25 +108,24 @@
 	}
 }
 
-
+/*
+  List of blogs in blog page
+*/
 .blogs {
 	border-top:solid 2px #ACBBCD;
 
 	.clanki	{
-
 		.okvir {
 			box-shadow:0px 6px 12px #E1D3D3;
 			background-color:rgba(240, 240, 240, 0.8);
 			.legend {
 				font-size:7px;
 				letter-spacing:1px;
-
 			}
 		}
 		.okvir:hover {
 			box-shadow:0px 0px 2px #E1D3D3;
-		}	
-			
+		}		
 		.naslov {
 			color:black;
 			font-size:22px;
@@ -136,8 +138,7 @@
 			transition: all 0.6s ease-in-out;
 			& :hover {
 				color:#FBCC32;
-			}
-			
+			}	
 		}
 		.ustvarjen {
 			font-size:9px;
@@ -147,7 +148,6 @@
 			font-size:12px;
 			font-weight:bold;
 			color:black;
-			
 		}	
 		.show-more {
 			color:black;
@@ -163,36 +163,12 @@
 			& :hover {
 				color:#F9C207;
 			}
-		}	
-
-		
+		}			
 	}
 }	
-
-
-
-
-.bgg {
-	background-color:rgba(240, 240, 240, 0.8);
-}
-
-.time-curent {
-	inline-list:none;
-	li {
-		text-align:left;
-		font-size: 10px;
-	}
-	h5 {
-		text-align: center;
-		font-size: 11px;
-	}
-	.current {
-		text-align:center;
-		font-size: 10px;
-		font-weight:bold;
-		
-	}
-}
+/*
+  My Projects
+*/
 .work-list {
 	list-style:none;
 }
@@ -208,7 +184,6 @@
 .project {
 	font-family: 'Cantora One', sans-serif;font-weight:bold;letter-spacing:-1px;
 }
-
 .red {
 	color:red;
 	font-size:20px; letter-spacing:-1px;
@@ -242,7 +217,6 @@
 	-o-box-shadow:0 4px 5px #949494;
 	-ms-box-shadow:0 4px 5px #949494;
 	box-shadow:0 4px 5px #949494;
-
 }
 
 @import url(http://fonts.googleapis.com/css?family=Cantora+One);

@@ -48,11 +48,7 @@ $('.zapri').click(function () {
 		delay().fadeOut(500)
 });
 
-// --- funkcija za footer show and back-to-up animation
-
-
-
-
+// --- funkcija za show and back-to-top animation
 function backToTop () {
 	$("#back-top").hide();
 
@@ -74,13 +70,11 @@ function backToTop () {
 
 backToTop();
 
-
+// Animation fadeIn+delay div on pages
 $ (document).ready (function() {
-	$("p.in1").fadeIn (1000);
-	$("p.in2").delay(1200).fadeIn(1500);
-	$("p.in3").delay(3000).fadeIn(1500); 
 	$("div.glava").fadeIn(1200); // Naslov
 	$("div.about_me").delay(200).fadeIn(1200);  // o meni
 	$("div.hobbi").delay(300).fadeIn(1200);  // moji hobbies
 	$("div.our-team").delay(500).fadeIn(1200); // our team
-});
+	$("form.form-show").fadeIn(1400) // contact form
+}); 

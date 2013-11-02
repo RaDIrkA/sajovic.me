@@ -1,5 +1,4 @@
 <h6><%=h content_for(:title, "All My Work And Projects / Blaz Sajovic") %></h6>
-
 <div class="row">
 	<div class="large-12 small-12 columns">
 		<div class="glava" style="display:none;">
@@ -8,11 +7,13 @@
 	</div>
 </div>	
 <br/>
+<!-- SECTION Project Start -->
 <div class="row">
 	<div class="large-12 small-12 columns">
 		<div class="section-container tabs" data-section="tabs">
 			<section class="active">
 				<p class="title" data-section-title><%= link_to "Projects", "#panel1", class: "project" %></p>
+<!-- SECTION #Project LIST -->				
 				<div class="content" data-section-content>		
 					<ul data-orbit >
 						<li>
@@ -38,7 +39,7 @@
 						<li>
 							<img src="assets/Slider/xbox.jpg" alt="sajovic.me">
 							<div class="orbit-caption">Flashing Fat Xbox360 LT+</div>
-						</li>																																					
+						</li>													
 					</ul>	
 					<div class="row">
 						<div class="large-12 columns">
@@ -47,93 +48,78 @@
 							</div>
 						</div>
 					</div>	
-
-
-
-					
-			
-			<hr>
-			<div class="row project-all">
-				<div class="large-8 columns">
-					<p>I am  <span class="siva-bg"><span class="white">Slo</span><span class="blue">ven</span><span class="red">ian</span></span> Junior <span class="red"> Ruby </span> on <span class="red"> Rails </span> developer.<br/> I have some knowledge of language( HTML, CSS , litle of PHP ). I am working with scripts (JavaScript, Jquery, CoffeScript).</p><br/>
-					<p>This project was written in: </p>
-				</div>
-				<div class="large-4 columns">	
-					<img src="assets/project/ruby-on-rails.png" alt="ruby on rails" class="ror-png"> 	
-				</div>
-				<div class="large-12 columns">
-					<p><span class="red">Ruby </span> -v <kbd>"2.0.0"</kbd> more documentation about <%= link_to "Ruby Programming Language", "https://www.ruby-lang.org/en/", target: "_blank", class: "red" %><br/>
-					<span class="red">Rails </span> -v <kbd>"4.0.0"</kbd></p><br/>
-					<p><span class="red">Ruby</span> on <span class="red">Rails</span><span class="blue">&reg;</span>
-					is an open-source web framework that's optimized for programmer happiness and sustainable productivity.
-					It lets you write beautiful code by favorite convention over configuration.<br>
-					<span class="red">Rails</span> was created in 2003 by <%= link_to "David Heinemeier", "http://david.heinemeierhansson.com", target: "_blank" %> and has since been extended by the <%= link_to "Rails core team", "http://rubyonrails.org/core", target: "_blank" %>, <%= link_to "more than 3,100 contributors", "http://contributors.rubyonrails.org", target: "_blank" %>.</p>
-					<p>More about <%= link_to "Rails", "http://rubyonrails.org/", terger: "_blank", class: "red" %></p><hr/><br/>
-					<p>For Front-end im using <span class="blue">Foundation 4 from ZURB</span><br/>
-					The most advanced responsive front-end framework in the world. <br/>
-					read => <%= link_to ".::more::.", "http://foundation.zurb.com", target: "_blank" %><hr/>
-					<span class="blue">What's new in 4?</span>:<br/>
-					<p>Responsive design lighter, faster and more advanced...</p><hr>
-					<span class="blue">Foundation</span><br/>
-					<p>is made by <%= link_to "ZURB", "http://www.zurb.com", target: "_blank" %>, a product design company in Campbell, California.<br/>
-					More than 15 years of experoence building web products, services and websites into this framework.</p>
-				</div>
-
-
-				<div class="large-12 columns">
-					<p>My project have admin panel and dashboard for adding blogs, new work and projects</p><br/>
-					<h4>Go..::<small>through the presentation</small>::.. &#8595;</h4>
-				</div>
-				<div class="large-12 columns">
-					<img src="assets/project/admin-panel.png" alt="sajovic.me admin panel"><br/><hr/>
-					<p>Admin Navigation</p>
-					<img src="assets/project/panel.png" alt="sajovic.me panel"><br/><hr/>
-					<p>Log In to my application</p>
-					<img src="assets/project/log-in.png" alt="sajovic.me log_in">
-				</div>	
-				<div class="large-12 columns">
-					<p>For editing i am using <span class="blue">CKEditor</span>.
-					<hr/>
-					<%= link_to "CKEditor", "http://ckeditor.com", class: "blue", target: "_blank" %><p> is a ready-for-use HTML text editor designed to simplify web content creation. It's a WYSIWYG editor that brings common word processor features directly to your web pages. Enhance your website experience with our community maintained editor. </p><br/>
-					<p>It's <span class="blue-bg">free & open source </span>, <span class="red-bg">The best</span> web text editor for everyone => 
-					<%= link_to ".::more::.", "http://ckeditor.com/", target: "_blank" %>
-					<img src="assets/project/ckeditor.png" alt="sajovic.me ckeditor"><br/>
 					<hr>
-				</div>
-
-				<div class="large-12 columns">
-					<p>Project during development</p>
-					<img src="assets/project/project-my.png" alt="sajovic.me project">
-				</div>
-
-				<hr/>
-				<h6 class="blur">Blaz Sajovic <small>Sajovic.me &copy; 2013 // Project "My personal website"</small></h6>
-				<hr>
-
-				<p style="text-align:center">@RaDIrkA</p>
-				<div class="bottom-project">sajovic.me &copy; 2013</div>				
-			</div>		
-
-			
+					<div class="row project-all">
+						<div class="large-8 columns">
+							<p>I am  <span class="siva-bg"><span class="white">Slo</span><span class="blue">ven</span><span class="red">ian</span></span> Junior <span class="red"> Ruby </span> on <span class="red"> Rails </span> developer.<br/> I have some knowledge of language( HTML, CSS , some PHP ). The scropts I'am working with (JavaScript, Jquery, CoffeScript).</p><br/>
+							<p>This project was written in: </p>
+						</div>
+						<div class="large-4 columns">	
+							<img src="assets/project/ruby-on-rails.png" alt="ruby on rails" class="ror-png"> 	
+						</div>
+						<div class="large-12 columns">
+							<p><span class="red">Ruby </span> -v <kbd>"2.0.0"</kbd> more documentation about <%= link_to "Ruby Programming Language", "https://www.ruby-lang.org/en/", target: "_blank", class: "red" %><br/>
+							<span class="red">Rails </span> -v <kbd>"4.0.0"</kbd></p><br/>
+							<p><span class="red">Ruby</span> on <span class="red">Rails</span><span class="blue">&reg;</span>
+							is an open-source web framework that's optimized for programmer happiness and sustainable productivity.
+							It lets you write beautiful code by favorite convention over configuration.<br>
+							<span class="red">Rails</span> was created in 2003 by <%= link_to "David Heinemeier", "http://david.heinemeierhansson.com", target: "_blank" %> and has since been extended by the <%= link_to "Rails core team", "http://rubyonrails.org/core", target: "_blank" %>, <%= link_to "more than 3,100 contributors", "http://contributors.rubyonrails.org", target: "_blank" %>.</p>
+							<p>More about <%= link_to "Rails", "http://rubyonrails.org/", terger: "_blank", class: "red" %></p><hr/><br/>
+							<p>For Front-end im using <span class="blue">Foundation 4 from ZURB</span><br/>
+							The most advanced responsive front-end framework in the world. <br/>
+							read => <%= link_to ".::more::.", "http://foundation.zurb.com", target: "_blank" %><hr/>
+							<span class="blue">What's new in 4?</span><br/>
+							<p>Responsive design lighter, faster and more advanced...</p><hr>
+							<span class="blue">Foundation</span><br/>
+							<p>is made by <%= link_to "ZURB", "http://www.zurb.com", target: "_blank" %>, a product design company in Campbell, California.<br/>
+							More than 15 years of experoence building web products, services and websites into this framework.</p>
+						</div>
+						<div class="large-12 columns">
+							<p>My project have admin panel and dashboard for adding blogs, new work and projects</p><br/>
+							<h4>Go..::<small>through the presentation</small>::.. &#8595;</h4>
+						</div>
+						<div class="large-12 columns">
+							<img src="assets/project/admin-panel.png" alt="sajovic.me admin panel"><br/><hr/>
+							<p>Admin Navigation</p>
+							<img src="assets/project/panel.png" alt="sajovic.me panel"><br/><hr/>
+							<p>Log In to my application</p>
+							<img src="assets/project/log-in.png" alt="sajovic.me log_in">
+						</div>	
+						<div class="large-12 columns">
+							<p>For editing i am using <span class="blue">CKEditor</span>.
+							<hr/>
+							<%= link_to "CKEditor", "http://ckeditor.com", class: "blue", target: "_blank" %><p> is a ready-for-use HTML text editor designed to simplify web content creation. It's a WYSIWYG editor that brings common word processor features directly to your web pages. Enhance your website experience with our community maintained editor. </p><br/>
+							<p>It's <span class="blue-bg">free & open source </span>, <span class="red-bg">The best</span> web text editor for everyone => 
+							<%= link_to ".::more::.", "http://ckeditor.com/", target: "_blank" %>
+							<img src="assets/project/ckeditor.png" alt="sajovic.me ckeditor"><br/>
+							<hr>
+						</div>
+						<div class="large-12 columns">
+							<p>Project during development</p>
+							<img src="assets/project/project-my.png" alt="sajovic.me project">
+						</div>
+						<hr/>
+						<h6 class="blur">Blaz Sajovic <small>Sajovic.me &copy; 2013 // Project "My personal website"</small></h6>
+						<hr>
+						<p style="text-align:center">@RaDIrkA</p>
+						<div class="bottom-project">sajovic.me &copy; 2013</div>				
+					</div>		
 			</section>
-			
 			<section>
     			<p class="title" data-section-title><%= link_to "Reference", "#panel2", class: "project" %></p>
+<!-- SECTION #Reference LIST -->	    			
     			<div class="content" data-section-content>
 					<% for project in @projects %>
 					<ul class="work-list">
 						<li><%= project.content.html_safe %></li>
 					</ul>
 					<hr/>
-
-
 					<% end %> 
 				</div>
-    		
   			</section>
-
 			<section>
     			<p class="title" data-section-title><%= link_to "Work", "#panel2", class: "project" %></p>
+<!-- SECTION #Work LIST -->	    			
     			<div class="content" data-section-content>
       				<% for work in @works %>
       				<ul class="work-list">
@@ -142,10 +128,6 @@
   					<% end %>	
     			</div>
   			</section>
-
 		</div>
 	</div>
 </div>
-
-
-
