@@ -341,3 +341,21 @@
 [11/03/13 10:47:54 +0100 radirka-HP-Compaq-6715b-GC070ES-AKN (2430)] INFO : Installing Rails 4 view instrumentation
 [11/03/13 10:47:54 +0100 radirka-HP-Compaq-6715b-GC070ES-AKN (2430)] INFO : Finished instrumentation
 [11/03/13 10:47:56 +0100 radirka-HP-Compaq-6715b-GC070ES-AKN (2430)] INFO : Doing deferred dependency-detection before Rack startup
+[11/04/13 13:18:39 +0100 radirka-HP-Compaq-6715b-GC070ES-AKN (2548)] INFO : Starting the New Relic agent in "development" environment.
+[11/04/13 13:18:39 +0100 radirka-HP-Compaq-6715b-GC070ES-AKN (2548)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[11/04/13 13:18:39 +0100 radirka-HP-Compaq-6715b-GC070ES-AKN (2548)] INFO : Reading configuration from config/newrelic.yml
+[11/04/13 13:18:39 +0100 radirka-HP-Compaq-6715b-GC070ES-AKN (2548)] INFO : New Relic Agent Developer Mode enabled.
+[11/04/13 13:18:39 +0100 radirka-HP-Compaq-6715b-GC070ES-AKN (2548)] INFO : Enabling the Request Sampler.
+[11/04/13 13:18:39 +0100 radirka-HP-Compaq-6715b-GC070ES-AKN (2548)] INFO : Enabling the Request Sampler.
+[11/04/13 13:18:39 +0100 radirka-HP-Compaq-6715b-GC070ES-AKN (2548)] INFO : Environment: development
+[11/04/13 13:18:39 +0100 radirka-HP-Compaq-6715b-GC070ES-AKN (2548)] INFO : Dispatcher: webrick
+[11/04/13 13:18:39 +0100 radirka-HP-Compaq-6715b-GC070ES-AKN (2548)] INFO : Application: Sajovic.me
+[11/04/13 13:18:39 +0100 radirka-HP-Compaq-6715b-GC070ES-AKN (2548)] WARN : Agent configured not to send data in this environment.
+[11/04/13 13:18:40 +0100 radirka-HP-Compaq-6715b-GC070ES-AKN (2548)] INFO : Installing deferred Rack instrumentation
+[11/04/13 13:18:40 +0100 radirka-HP-Compaq-6715b-GC070ES-AKN (2548)] INFO : Installing ActiveRecord 4 instrumentation
+[11/04/13 13:18:40 +0100 radirka-HP-Compaq-6715b-GC070ES-AKN (2548)] INFO : Installing Net instrumentation
+[11/04/13 13:18:40 +0100 radirka-HP-Compaq-6715b-GC070ES-AKN (2548)] INFO : Installing Rails 4 Controller instrumentation
+[11/04/13 13:18:40 +0100 radirka-HP-Compaq-6715b-GC070ES-AKN (2548)] INFO : Installing Rails4 Error instrumentation
+[11/04/13 13:18:40 +0100 radirka-HP-Compaq-6715b-GC070ES-AKN (2548)] INFO : Installing Rails 4 view instrumentation
+[11/04/13 13:18:40 +0100 radirka-HP-Compaq-6715b-GC070ES-AKN (2548)] INFO : Finished instrumentation
+[11/04/13 13:18:43 +0100 radirka-HP-Compaq-6715b-GC070ES-AKN (2548)] INFO : Doing deferred dependency-detection before Rack startup
