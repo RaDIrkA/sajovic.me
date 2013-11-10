@@ -4,9 +4,9 @@ require "bundler/capistrano"
 
 server "193.26.26.155", :web, :app, :db, primary: true
 
-set :application, "sajovic"
-set :user, "deployer"
-set :deploy_to, "/home/#{user}/apps/#{application}"
+set :application, "sajovic.me"
+set :user, "radirka"
+set :deploy_to, "/root/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
 
@@ -28,17 +28,17 @@ namespace :deploy do
     end
   end
 
-  task :setup_config, roles: app do
-    sudo "ln -nfs #{current_path}/config/nginx.conf /etc/nginx/sites-enabled/#{}"
-    sudo "ln -nfs #{current_path}/config/unicorn_init.sh/init.d/unicorn_#{}"
+  task :setup_config, roles: :app do
+    sudo "ln -nfs #{current_path}/config/nginx.conf /etc/nginx/sites-enabled/#{application}"
+    sudo "ln -nfs #{current_path}/config/unicorn_init.sh/init.d/unicorn_#{application}"
     run "mkdir -p #{shared_path}/config"
-    put File.read("config/database.example.yml"), "#{shared_path}/config/database"
+    put File.read("config/database.example.yml"), "#{shared_path}/config/database.yml"
     puts "Now edit the config files in #{shared_path}."
   end
   after "deploy:setup", "deploy:setup_config"
 
   task :symlink_config, roles: :app do 
-    run "ln -nfs #{shared_path}/config/database.yml #{releases_path}/config/database"
+    run "ln -nfs #{shared_path}/config/database.yml #{releases_path}/config/database.yml"
   end
   after "deploy:finalize_update", "deploy:symlink_config"
 
