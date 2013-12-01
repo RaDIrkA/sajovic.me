@@ -1,0 +1,111 @@
+l
+l/
+/l
+\l
+createdb
+\l
+\q
+\l
+\l
+\l
+\q
+\l
+\q
+\l
+\q
+/l
+\l
+\
+\q
+l
+\l
+q
+Qq
+\q
+\ł
+\l
+\l
+\Q
+\q
+\l
+\q
+\d
+DELETE
+DELETE BLOGS
+TRUNCATE blogs_table CASCADE;
+TRUNCATE blogs_table CASCADE;
+TRUNCATE blogs CASCADE;
+\D
+\d
+TRUNCATE blogs CASCADE;
+TRUNCATE blogs_id_seq CASCADE;
+TRUNCATE admins CASCADE;
+\q
+\?
+\h
+q
+\
+\q
+\l
+\q
+\list
+\q
+\list
+\list
+\list
+\dt
+\l
+\c development_sajovic
+\c db/development_sajovic
+dt
+\dt
+\show tables works
+\works
+\c works
+\d table
+\d works
+\d title
+\c title
+\d+ title
+\d+ content
+SELECT column_name FROM information_shema.columns WHERE table_name='title'
+\d+ title
+\d+ title
+\d+ title\q
+\q
+\l
+\c db/development_sajovic
+\l
+\d
+\d
+\q
+\d
+\l
+c db/development_sajovic_test
+\l
+d db/development_sajovic_test
+\c db/development_sajovic_test
+l
+\l
+\d
+\d works
+\cd works
+\dc works
+\d works
+\dc title
+\dc content
+exit
+QUIT
+\q
+/l
+\l
+\productio_sajovic
+\c productio_sajovic
+\c db/production_sajovic
+\l
+\dt
+c blogs
+\c blogs
+\d blogs
+\dt blogs
+\s blogs
